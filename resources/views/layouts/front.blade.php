@@ -145,7 +145,7 @@
    @yield('content')
         <!-- Join Team -->
       <section class="section-padding bg-dark text-center">
-         <h2 class="text-white mt-0">加入Rentkeya | 安家</h2>
+         <h2 class="text-white mt-0">加入枫窝 | MAPLELIVING</h2>
          <p class="text-white mb-4">详情请联系Rentkeya的客服，我们期待你的加入</p>
          <button type="button" class="btn btn-success"><a href="/contactUs" style="color: white">联系我们</a></button> <button type="button" class="btn btn-outline-success"><a href="/aboutUs" style="color: white">更多详情</a></button>
       </section>
@@ -157,25 +157,23 @@
             <div class="row">
                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 
-                  <img src="../asset/img/logo2.png" class="image">
+                  <img src="../asset/img/mapleliv/2.png" class="image">
 
-                  <p>#1111-1030 West Georgia Street<br> Vancouver BC V6E3M5</p>
-                  <p class="mb-0"><a class="text-dark" href="#">(+1)604-336-9608</a></p>
-                  <p class="mb-0"><a class="text-success" href="#">info@rentkeya.ca</a></p>
+                  <p class="mb-0"><a class="text-dark" href="#">(+1)778-987-7680</a></p>
+                  <p class="mb-0"><a class="text-success" href="#">maplelivinginfo@gmail.com</a></p>
                </div>
                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <h6 class="mb-4">COMPANY</h6>
+                  <h6 class="mb-4">公司相关</h6>
                   <ul>
-                  <li><a href="/aboutUs">关于Rentkeya</a></li>
-                  <li><a href="/showAgent">Rentkeya品质管家</a></li>
+                  <li><a href="/aboutUs">关于枫窝</a></li>
 
                   <li><a href="/contactUs">联系我们</a></li>
                   <ul>
                </div>
                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                  <h6 class="mb-4">NEWSLETTER</h6>
+                  <h6 class="mb-4">订阅我们</h6>
                   <div class="input-group">
-                     <input type="text" class="form-control" placeholder="Email Address..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                     <input type="text" class="form-control" placeholder="请输入邮箱地址.." aria-label="Recipient's username" aria-describedby="basic-addon2">
                      <div class="input-group-append">
                         <button class="btn btn-outline-secondary" type="button"><i class="mdi mdi-arrow-right"></i></button>
                      </div>
@@ -196,7 +194,7 @@
       <!-- End Footer -->
       <!-- Copyright -->
       <section class="pt-4 pb-4 text-center">
-         <p class="mt-0 mb-0">© Copyright 2018 Rentkeya Web Service Ltd. All Rights Reserved</p>
+         <p class="mt-0 mb-0">© Copyright 2018 MAPLELIV.COM. All Rights Reserved</p>
 
       </section>
       <!-- End Copyright -->
