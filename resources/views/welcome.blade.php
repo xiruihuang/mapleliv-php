@@ -313,9 +313,9 @@
                 @foreach($housing as $h)
                 @if($h ->status == 1)
                 <div class="picture">
-                    <div class="card card-list " style="min-height: 100%">
+                    <div class="card card-list " style="min-height: 80%">
                         <a href="/detail/{{$h -> id}}">
-                            <span class="badge badge-success">Rentkeya精选房源</span>
+                            <span class="badge badge-success">枫窝精选房源</span>
                             @foreach($houseIMGs as $i)
                             @if($i -> housingID == $h -> id)
                             @if($i -> status == 0)
@@ -375,7 +375,7 @@
                                         </h2>
                                     </div>
                                     <div class="card-footer">
-                                        <span style="overflow:"><i class="mdi mdi-sofa"></i> Beds : <strong>{{$h -> beds}}</strong></span>
+                                        <span><i class="mdi mdi-sofa"></i> Beds : <strong>{{$h -> beds}}</strong></span>
                                         <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>{{$h->baths}}</strong></span>
                                     </div>
                                 </a>

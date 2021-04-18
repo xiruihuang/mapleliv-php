@@ -84,7 +84,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12 text-center">
-                  <h1 class="mt-0 mb-3 text-white">Rentkeya精选房源</h1>
+                  <h1 class="mt-0 mb-3 text-white">枫窝合作房源 | MAPLELIVGING</h1>
                   <div class="breadcrumbs">
 
                   </div>
@@ -170,15 +170,12 @@
                                    <img class="card-img-top" src="../asset/img/agent.jpg" alt="Card image cap">
                                 -->
                                    <div class="card-body pb-0">
-                                      <h5 class="card-title mb-4">Rentkeya管家</h5>
+                                      <h5 class="card-title mb-4">枫窝租房</h5>
                                       <h5 class="card-title mb-4">{{$housing -> contactPeople}}</h5>
                                       <h6 class="card-subtitle mb-3 text-muted"><i class="mdi mdi-phone"></i> {{$housing -> phone}}</h6>
                                       <h6 class="card-subtitle mb-3 text-muted"><i class="mdi mdi-phone"></i> wechat: {{$housing -> wechat}}</h6>
 
-                                      <h6 class="card-subtitle text-muted"><i class="mdi mdi-link"></i> info@rentkeya.ca</h6>
-                                      @if(Auth::check())
-                                      <a href="/addFavorite/{{$housing->id}}">添加收藏</a>
-                                      @endif
+                                      <h6 class="card-subtitle text-muted"><i class="mdi mdi-link"></i>maplelivinginfo@gmail.com</h6>
                                    </div>
 
                              </div>
@@ -326,65 +323,7 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 
-              <div class="card sidebar-card">
-                 <div class="thirdb" style="height: 600px">
-                    <h5 class="card-title mb-4">精选广告</h5>
-                            <div class="swiper-container" style="height: 500px">
-                                   <div class="swiper-wrapper">
-                                      @foreach($ads as $a)
-                                      @if($a -> is_active == 1 && $a -> ad_position == 'r15')
-                                     <div class="swiper-slide">
-
-                                         <div class="card card-list">
-                                           <img src="{{$a -> ad_image_url}}" alt="{{$a -> ad_name}}" >
-
-                                         </div>
-                                     </div>
-                                     @endif
-                                     @endforeach
-<!--                                       @foreach($featureHousing as $h)-->
-<!--                                       <div class="swiper-slide">-->
-<!---->
-<!--                                           <div class="card card-list">-->
-<!---->
-<!--                                               @if($h -> uploadType < 3)-->
-<!--                                               <span class="badge badge-success">Rentkeya精选</span>-->
-<!--                                               @else-->
-<!--                                               <span class="badge badge-success">大众房源</span>-->
-<!--                                               @endif-->
-<!--                                               @foreach($IMG as $i)-->
-<!--                                               @if($i -> housingID == $h -> id)-->
-<!--                                               <img class="card-img-top" src="{{$i -> filePath }}" alt="Card image cap">-->
-<!--                                               @break-->
-<!--                                               @endif-->
-<!--                                               @endforeach-->
-<!--                                               <div class="card-body">-->
-<!--                                                   <a href="/detail/{{$h -> id}}">-->
-<!--                                                       <h5 class="card-title">{{str_limit($h -> title, 27)}}</h5>-->
-<!--                                                   </a>-->
-<!--                                                   <h6 class="card-subtitle mb-2 text-muted"><i class="mdi mdi-home-map-marker"></i> {{$h -> address}}, {{$h-> city}}</h6>-->
-<!--                                                   <h2 class="text-success mb-0 mt-3">-->
-<!--                                                       ${{$h -> publicPrice}} <small>/month</small>-->
-<!--                                                   </h2>-->
-<!--                                               </div>-->
-<!--                                               <div class="card-footer">-->
-<!--                                                   <span><i class="mdi mdi-sofa"></i> Beds : <strong>{{$h -> beds}}</strong></span>-->
-<!--                                                   <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>{{$h->baths}}</strong></span>-->
-<!--                                               </div>-->
-<!---->
-<!--                                           </div>-->
-<!--                                       </div>-->
-<!--                                       @endforeach-->
-                                   </div>
-                                   <!-- Add Pagination -->
-
-                                    <div class="swiper-pagination"></div>
-                                    @if($agent -> isDesktop())
-                                   <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    @endif
-
-                                 </div>
+             
                  </div>
               </div>
               <div style="margin-top:69px;height:685px">

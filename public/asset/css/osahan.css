@@ -503,8 +503,8 @@ Version: 1.0
      color: #fa6423;
 }
  .blog-card .badge-success {
-     background-color: rgba(0, 216, 200, 0.09);
-     color: #00d8c8;
+     background-color: rgba(164, 166, 160, 0.5);
+     color: #a4a6a0;
 }
  .blog-card .badge-dark {
      background-color: rgba(52, 58, 64, 0.19);

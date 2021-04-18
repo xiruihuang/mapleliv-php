@@ -31,7 +31,7 @@
 			</ol>
 			<!-- end breadcrumb -->
 			<!-- begin page-header -->
-			<h1 class="page-header">Dashboard <small>Rentkeya | 安家</small></h1>
+			<h1 class="page-header">Dashboard <small>枫窝租房 | MAPLELIVING</small></h1>
 			<!-- end page-header -->
 			<!-- begin row -->
 			@if(Auth::user()->type < 2)

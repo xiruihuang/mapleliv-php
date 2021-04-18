@@ -49,7 +49,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12 text-center">
-                  <h1 class="mt-0 mb-3 text-white">Rentkeya精选房源</h1>
+                  <h1 class="mt-0 mb-3 text-white">枫窝合作房源</h1>
                   <div class="breadcrumbs">
 
                   </div>
