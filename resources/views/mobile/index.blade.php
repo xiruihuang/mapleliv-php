@@ -53,7 +53,7 @@
 
                 <div class="slider-item">
                     <a href="javascript:;">
-                        <img src="../mobile2/images/12.jpg">
+                        <img src="../mobile2/images/12.png">
 
                     </a>
                 </div>
