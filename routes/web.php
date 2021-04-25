@@ -52,7 +52,7 @@ Route::get('/showAllProfit', 'ProfitController@showAllProfit');
 
 Route::get('/addGenProperty', 'HousingController@addGenProperty');
 Route::post('/createGenProperty', 'HousingController@createGenProperty');
-Route::get('/rentkeyaProperty', 'HousingController@rentkeyaProperty');
+Route::get('/property', 'HousingController@rentkeyaProperty');
 Route::get('/genProperty', 'HousingController@genProperty');
 Route::get('/addRentkeyaProperty', 'HousingController@addRentkeyaProperty');
 Route::post('/createRentkeyaProperty', 'HousingController@createRentkeyaProperty');
