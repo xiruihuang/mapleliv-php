@@ -121,7 +121,7 @@
                     </span>
                     <span class="aui-tabBar-item-text">首页</span>
                 </a>
-                <a href="/rentkeyaProperty" class=" aui-tabBar-item ">
+                <a href="/property" class=" aui-tabBar-item ">
                     <span class="aui-tabBar-item-icon">
                         <i class="icon icon-credit"></i>
                     </span>
