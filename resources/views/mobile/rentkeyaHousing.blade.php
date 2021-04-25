@@ -92,12 +92,12 @@
                             <a href="/detail/{{$h -> id}}" class="aui-flex b-line">
                                 <div class="aui-flex-box">
                                     @if($h -> uploadTypeID < 3)
-                                    <h3><em style="background:#64ddba">精选</em>{{str_limit($h->title,25)}}</h3>
+                                    <h3><em style="background:#dcb1a0">精选</em>{{str_limit($h->title,25)}}</h3>
                                     @else
                                     <h3><em class="badge badge-warning">大众</em>{{str_limit($h->title,25)}}</h3>
                                     @endif
                                     <span>
-                                        <em style="color: #64ddba; font-weight:bold">${{$h->originPrice}}</em>
+                                        <em style="color: #64ddba; font-weight:bold">${{$h->publicPrice}}</em>
                                         <em>{{$h->created_at}}</em>
                                     </span>
                                 </div>
