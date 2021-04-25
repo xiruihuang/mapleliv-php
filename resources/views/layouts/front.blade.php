@@ -165,7 +165,7 @@
 <section class="section-padding bg-dark text-center">
     <h2 class="text-white mt-0">加入枫窝 | MAPLELIVING</h2>
     <p class="text-white mb-4">详情请联系枫窝的客服，我们期待你的加入</p>
-    <button type="button" class="btn btn-success"><a href="/contactUs" style="color: white">联系我们</a></button>
+    <button type="button" class="btn btn-success"><a href="https://fp6byf7u2a3.typeform.com/to/RoinodcF" style="color: white">帮我找房</a></button>
     <button type="button" class="btn btn-outline-success"><a href="/aboutUs" style="color: white">更多详情</a></button>
 </section>
 <!-- End Join Team -->
@@ -184,8 +184,8 @@
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <h6 class="mb-4">公司相关</h6>
                 <ul>
-                    <li><a href="/aboutUs">关于枫窝</a></li>
-
+                    <li><a href="https://fp6byf7u2a3.typeform.com/to/RoinodcF">帮我找房</a></li>
+                    <li><a href="/aboutUs">关于我们</a></li>
                     <li><a href="/contactUs">联系我们</a></li>
                 </ul>
             </div>

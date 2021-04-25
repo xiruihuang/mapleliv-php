@@ -19,7 +19,7 @@
     <!-- What We Provide -->
     <section class="section-padding">
         <div class="section-title text-center mb-5">
-            <h2>把房屋交给枫窝 | MapleLiving</h2>
+            <h2>让枫窝帮您找房</h2>
             <p>我们将提供最好的合作房源</p>
         </div>
         <div class="container">

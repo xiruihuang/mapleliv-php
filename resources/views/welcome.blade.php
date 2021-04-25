@@ -243,7 +243,7 @@
 
 
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                            <button type="submit" class="btn btn-success btn-block no-radius font-weight-bold">SEARCH
+                            <button type="submit" class="btn btn-success btn-block no-radius font-weight-bold">搜索
                             </button>
 
                         </div>
@@ -353,13 +353,13 @@
                                                             class="mdi mdi-home-map-marker"></i> {{$h -> address}}
                                                     , {{$h-> city}}</h6>
                                                 <h2 class="text-success mb-0 mt-3">
-                                                    ${{$h -> publicPrice}} <small>/month</small>
+                                                    ${{$h -> publicPrice}} <small>/ 月</small>
                                                 </h2>
                                             </div>
                                             <div class="card-footer">
-                                                <span><i class="mdi mdi-sofa"></i> Beds : <strong>{{$h -> beds}}</strong></span>
+                                                <span><i class="mdi mdi-sofa"></i> 房间 : <strong>{{$h -> beds}}</strong></span>
                                                 <span style="display:block"><i class="mdi mdi-scale-bathroom"
-                                                                               style="position:left"></i> Baths : <strong>{{$h->baths}}</strong></span>
+                                                                               style="position:left"></i> 厕所 : <strong>{{$h->baths}}</strong></span>
                                             </div>
                                         </a>
                                     </div>
@@ -382,11 +382,7 @@
                                         <div class="col-lg-4 col-md-4">
                                             <div class="card card-list">
                                                 <a href="/detail/{{$h -> id}}">
-                                                    @if($h -> uploadType < 3)
-                                                        <span class="badge badge-success">枫窝合作房源</span>
-                                                    @else
-                                                        <span class="badge badge-success">大众房源</span>
-                                                    @endif
+
                                                     @foreach($houseIMGs as $i)
                                                         @if($i -> housingID == $h -> id)
                                                             <img class="card-img-top" src="{{$i -> filePath }}"
@@ -400,12 +396,12 @@
                                                                     class="mdi mdi-home-map-marker"></i> {{$h -> address}}
                                                             , {{$h-> city}}</h6>
                                                         <h2 class="text-success mb-0 mt-3">
-                                                            ${{$h -> publicPrice}} <small>/month</small>
+                                                            ${{$h -> publicPrice}} <small>/ 月</small>
                                                         </h2>
                                                     </div>
                                                     <div class="card-footer">
-                                                        <span><i class="mdi mdi-sofa"></i> Beds : <strong>{{$h -> beds}}</strong></span>
-                                                        <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>{{$h->baths}}</strong></span>
+                                                        <span><i class="mdi mdi-sofa"></i> 房间 : <strong>{{$h -> beds}}</strong></span>
+                                                        <span><i class="mdi mdi-scale-bathroom"></i> 厕所 : <strong>{{$h->baths}}</strong></span>
                                                     </div>
                                                 </a>
                                             </div>
