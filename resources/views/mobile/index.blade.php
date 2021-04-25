@@ -169,7 +169,7 @@
                             <div class="aui-flex-box">
                                 <h3><em style="background:#dcb1a0">精选</em>{{str_limit($h->title,25)}}</h3>
                                 <span>
-                                        <em style="color: #64ddba; font-weight:bold">${{$h->publicPrice}}</em>
+                                        <em style="color: #dcb1a0; font-weight:bold">${{$h->publicPrice}}</em>
                                         <em>{{$h->created_at}}</em>
                                     </span>
                             </div>
