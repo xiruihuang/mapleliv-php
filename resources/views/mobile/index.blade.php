@@ -76,7 +76,7 @@
     <section class="aui-scrollView">
         <div class="aui-palace">
 
-            <a href="/rentkeyaProperty" class="aui-palace-grid">
+            <a href="/property" class="aui-palace-grid">
                 <div class="aui-palace-grid-icon">
                     <img src="../mobile2/images/icon-item-002.png" alt="">
                 </div>
@@ -85,7 +85,7 @@
                 </div>
             </a>
 
-            <a href="/rentkeyaProperty" class="aui-palace-grid">
+            <a href="/property" class="aui-palace-grid">
                 <div class="aui-palace-grid-icon">
                     <img src="../mobile2/images/icon-item-004.png" alt="">
                 </div>
@@ -94,7 +94,7 @@
                 </div>
             </a>
 
-            <a href="/rentkeyaProperty" class="aui-palace-grid">
+            <a href="/property" class="aui-palace-grid">
                 <div class="aui-palace-grid-icon">
                     <img src="../mobile2/images/icon-item-004.png" alt="">
                 </div>
@@ -191,7 +191,7 @@
 
                     <a href="/detail/{{$h -> id}}" class="b-line" style="text-align: center;">
                         <br/>
-                        <p style="text-align: center;"><a href="/rentkeyaProperty">查看更多</a></p>
+                        <p style="text-align: center;"><a href="/property">查看更多</a></p>
                     </a>
 
 
@@ -208,7 +208,7 @@
                     </span>
             <span class="aui-tabBar-item-text">首页</span>
         </a>
-        <a href="/rentkeyaProperty" class="aui-tabBar-item">
+        <a href="/property" class="aui-tabBar-item">
                     <span class="aui-tabBar-item-icon">
                         <i class="icon icon-credit"></i>
                     </span>

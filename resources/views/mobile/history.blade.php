@@ -94,7 +94,7 @@
                           
                             <a href="/" class="b-line" style="text-align: center;">
                                 <br/>
-                                <p style="text-align: center;"><a href="/rentkeyaProperty">查看更多房源</a></p>
+                                <p style="text-align: center;"><a href="/property">查看更多房源</a></p>
                             </a>
                             
 
@@ -142,7 +142,7 @@
                     </span>
                     <span class="aui-tabBar-item-text">首页</span>
                 </a>
-                <a href="/rentkeyaProperty" class="aui-tabBar-item-active aui-tabBar-item ">
+                <a href="/property" class="aui-tabBar-item-active aui-tabBar-item ">
                     <span class="aui-tabBar-item-icon">
                         <i class="icon icon-credit"></i>
                     </span>
