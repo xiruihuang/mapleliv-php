@@ -97,7 +97,7 @@
                                     <h3><em class="badge badge-warning">大众</em>{{str_limit($h->title,25)}}</h3>
                                     @endif
                                     <span>
-                                        <em style="color: #64ddba; font-weight:bold">${{$h->publicPrice}}</em>
+                                        <em style="color: #dcb1a0; font-weight:bold">${{$h->publicPrice}}</em>
                                         <em>{{$h->created_at}}</em>
                                     </span>
                                 </div>
