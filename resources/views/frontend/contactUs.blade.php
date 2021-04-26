@@ -35,7 +35,13 @@
                     <p>maplelivinginfo@gmail.com</p>
 
                 </div>
-
+                <div class="col-lg-8 col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
