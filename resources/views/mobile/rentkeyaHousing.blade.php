@@ -91,6 +91,13 @@
                           @foreach($housing1 as $h)
                             <a href="/detail/{{$h -> id}}" class="aui-flex b-line">
                                 <div class="aui-flex-box">
+                                    <div class="aui-flex-box">
+                                        <h3><em style="background:#dcb1a0">精选</em>{{str_limit($h->title,25)}}</h3>
+                                        <span>
+                                        <em style="color: #dcb1a0; font-weight:bold">${{$h->publicPrice}}</em>
+                                        <em>{{$h->created_at}}</em>
+                                    </span>
+                                    </div>
                                     <span>
                                         <em style="color: #dcb1a0; font-weight:bold">${{$h->publicPrice}}</em>
                                         <em>{{$h->created_at}}</em>
