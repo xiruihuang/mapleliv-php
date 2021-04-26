@@ -42,7 +42,7 @@
                         <div class="slider-wrapper">
 
                             <div class="slider-item">
-                                <a href="javascript:;">
+                                <a href="">
                                     <img src="../mobile2/images/13.png">
 
                                 </a>
@@ -98,10 +98,6 @@
                                         <em>{{$h->created_at}}</em>
                                     </span>
                                     </div>
-                                    <span>
-                                        <em style="color: #dcb1a0; font-weight:bold">${{$h->publicPrice}}</em>
-                                        <em>{{$h->created_at}}</em>
-                                    </span>
                                 </div>
                                 <div class="aui-ent-img">
                                   @foreach($houseIMGs as $hi)
