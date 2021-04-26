@@ -82,26 +82,7 @@
             padding: 0;
         }
 
-        .pagination li {
-            width: 35px;
-            height: 32px;
-            background-color: white;
-            text-align: center;
-            margin: 0.5px;
-            font-size: 14px;
-            padding-top: 5px;
-        }
 
-        .pagination .active {
-            background-color: #64ddba;
-            color: white;
-            border-left-style: none;
-        }
-
-        .pagination a {
-            color: #64ddba;
-
-        }
 
         .swiper-container {
             width: 100%;
