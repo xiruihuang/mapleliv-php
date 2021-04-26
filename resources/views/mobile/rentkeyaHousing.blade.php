@@ -43,7 +43,7 @@
 
                             <div class="slider-item">
                                 <a href="javascript:;">
-                                    <img src="../mobile2/images/13.jpg">
+                                    <img src="../mobile2/images/13.png">
 
                                 </a>
                             </div>
@@ -91,11 +91,6 @@
                           @foreach($housing1 as $h)
                             <a href="/detail/{{$h -> id}}" class="aui-flex b-line">
                                 <div class="aui-flex-box">
-                                    @if($h -> uploadTypeID < 3)
-                                    <h3><em style="background:#dcb1a0">精选</em>{{str_limit($h->title,25)}}</h3>
-                                    @else
-                                    <h3><em class="badge badge-warning">大众</em>{{str_limit($h->title,25)}}</h3>
-                                    @endif
                                     <span>
                                         <em style="color: #dcb1a0; font-weight:bold">${{$h->publicPrice}}</em>
                                         <em>{{$h->created_at}}</em>
@@ -131,31 +126,6 @@
                     </span>
                     <span class="aui-tabBar-item-text">精选</span>
                 </a>
-                <a href="/generalProperty" class="aui-tabBar-item">
-                    <span class="aui-tabBar-item-icon">
-                        <i class="icon icon-meTo"></i>
-                    </span>
-                    <span class="aui-tabBar-item-text">大众</span>
-                </a>
-                 @if(Auth::check())
-                <a href="/my" class="aui-tabBar-item">
-                    <span class="aui-tabBar-item-icon">
-
-                        <i class="icon icon-find"></i>
-                    </span>
-                    <span class="aui-tabBar-item-text">我的</span>
-                    
-                </a>
-                @else
-                <a href="/login" class="aui-tabBar-item">
-                    <span class="aui-tabBar-item-icon">
-
-                        <i class="icon icon-find"></i>
-                    </span>
-                    <span class="aui-tabBar-item-text">登录</span>
-                    
-                </a>
-                @endif
             </footer>
         </section>
 
