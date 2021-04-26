@@ -93,15 +93,16 @@
             <div class="col-lg-4 col-md-4">
                 <h3 class="mt-1 mb-5">我们希望跟你保持联系</h3>
                 <h6 class="text-dark"><i class="mdi mdi-home-map-marker"></i> 地址 :</h6>
-                <p>...</p>
+                <p>6060 Sliver Dr, Burnaby</p>
                 <h6 class="text-dark"><i class="mdi mdi-phone"></i> 电话 :</h6>
-                <p>(+1) 778-987-7680</p>
+                <p>(+1) 778-238-8686</p>
                 <h6 class="text-dark"><i class="mdi mdi-deskphone"></i> 微信客服 :</h6>
-                <p>...</p>
+                <img src="/asset/img/4.png" alt="" style="height: 160px;"/>
+                <img src="/asset/img/1.jpeg" alt="" style="height: 160px;"/>
+
+                <h6 class="text-dark"></h6>
                 <h6 class="text-dark"><i class="mdi mdi-email"></i> 邮箱 :</h6>
                 <p>maplelivinginfo@gmail.com</p>
-                <h6 class="text-dark"><i class="mdi mdi-link"></i> 公众号 :</h6>
-                <p>...</p>
 
             </div>
             <div class="col-lg-8 col-md-8">
@@ -196,8 +197,8 @@
 <script>
     function initMap() {
         var uluru = {
-            lat: 49.284496,
-            lng: -123.121969,
+            lat: 49.170550,
+            lng: -122.979260,
         };
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 15,
@@ -376,7 +377,7 @@
         });
         var contentString = '<div id="content">' +
             '<div class="pl-3 pr-3 pt-3 pb-3" id="bodyContent">' +
-            '<h6 class="text-dark"><i class="mdi mdi-home-map-marker"></i> Address :</h6><p>86 Petersham town, New South wales Waedll Steet, Australia PA 6550</p><h6 class="text-dark"><i class="mdi mdi-deskphone"></i> Mobile :</h6><p>(+20) 220 145 6589, +91 12345-67890</p><h6 class="text-dark"><i class="mdi mdi-email"></i> Email :</h6><p>iamosahan@gmail.com, info@gmail.com</p><h6 class="text-dark"><i class="mdi mdi-link"></i> Website :</h6><p>www.askbootstrap.com</p><div class="footer-social"><span>Follow : </span><a href="#"><i class="mdi mdi-facebook"></i></a><a href="#"><i class="mdi mdi-twitter"></i></a><a href="#"><i class="mdi mdi-instagram"></i></a><a href="#"><i class="mdi mdi-google"></i></a></div>' +
+            '<h6 class="text-dark"><i class="mdi mdi-home-map-marker"></i> Address :</h6><p>6060 Sliver Dr, Burnaby</p><h6 class="text-dark"><i class="mdi mdi-deskphone"></i> Mobile :</h6><p>(+1) 778-238-8686</p><h6 class="text-dark"><i class="mdi mdi-email"></i> Email :</h6><p>maplelivinginfo@gmail.com</p><h6 class="text-dark"><i class="mdi mdi-link"></i> Website :</h6><p>www.mapleliv.com</p></a></div>' +
             '</div>' +
             '</div>';
 
