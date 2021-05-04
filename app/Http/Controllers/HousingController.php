@@ -732,6 +732,27 @@ class HousingController extends Controller
         $filterResult['filterBeds'] = $request->input('beds');
         return view('/frontend/rentkeyaProperty',compact('housing','houseIMGs','agent', 'filterResult'));
     }
+    public function propertyArea($id) {
+        if ($id == 'VN') {
+            $id = "温哥华";
+        }
+        $housings = Housing::where([
+            ['area', 'LIKE', '%'. $id .'%'],
+        ])->orderBy('updated_at', 'desc') -> paginate(8);
+        $housing = $housings->appends($_GET);
+        $houseIMGs = HousingIMG::all();
+        $agent = new Agent();
+
+        $filterResult['filterCity'] = "";
+        $filterResult['filterMinPrice'] = "";
+        $filterResult['filterMaxPrice'] = "";
+        $filterResult['filterBeds'] = "";
+        $filterResult['title'] = "";
+        $filterResult['city'] = "";
+
+        $ads = AdBanner::where('route_url', '=', 'rentproperty')->get();
+        return view('/frontend/rentkeyaProperty',compact('housing','houseIMGs','agent', 'filterResult', 'ads'));
+    }
 
 
 
