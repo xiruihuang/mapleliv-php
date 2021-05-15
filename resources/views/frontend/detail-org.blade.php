@@ -334,7 +334,7 @@
                                              <div class="card card-list">
 
                                                    @if($h -> uploadType < 3)
-                                                      <span class="badge badge-success">Rentkeya精选</span>
+                                                      <span class="badge badge-success">MapleLiv精选房源</span>
                                                    @else
                                                       <span class="badge badge-success">大众房源</span>
                                                    @endif
@@ -585,7 +585,7 @@
                                              <div class="card card-list">
 
                                                    @if($h -> uploadType < 3)
-                                                      <span class="badge badge-success">Rentkeya精选</span>
+                                                      <span class="badge badge-success">MapleLiv精选房源</span>
                                                    @else
                                                       <span class="badge badge-success">大众房源</span>
                                                    @endif
@@ -676,7 +676,7 @@
                   <div class="card card-list">
                      <a href="#">
                         @if($s -> uploadType < 3)
-                        <span class="badge badge-success">Rentkeya精选</span>
+                        <span class="badge badge-success">MapleLiv精选房源</span>
                         @else
                         <span class="badge badge-success">大众房源</span>
                         @endif

@@ -88,7 +88,7 @@
                <div class="col-lg-4 col-md-4">
                   <div class="card card-list">
                      <a href="#">
-                        <span class="badge badge-success">Rentkeya精选房源</span>
+                        <span class="badge badge-success">MapleLiv精选房源</span>
                         @foreach($houseIMGs as $i)
                            @if($i -> housingID == $h -> id)
                            <img class="card-img-top" src="{{$i -> filePath }}" alt="Card image cap">
