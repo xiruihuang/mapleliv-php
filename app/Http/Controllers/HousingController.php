@@ -218,7 +218,6 @@ class HousingController extends Controller
         $address = urlencode( $a );
         $url = "https://maps.googleapis.com/maps/api/geocode/json?address={$address}&key=AIzaSyBwp8S3UV9qGcY73oOYFPvIJ9dFy3ExB1Q";
         $resp    = json_decode( file_get_contents( $url ), true );
-        return $resp;
 
         // Latitude and Longitude (PHP 7 syntax)
         $lat    = $resp['results'][0]['geometry']['location']['lat'] ?? '';
