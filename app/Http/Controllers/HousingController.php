@@ -734,9 +734,6 @@ class HousingController extends Controller
         return view('/frontend/rentkeyaProperty',compact('housing','houseIMGs','agent', 'filterResult'));
     }
     public function propertyArea($id) {
-        if ($id == 'VN') {
-            $id = "温哥华";
-        }
         $housings = Housing::where([
             ['area', 'LIKE', '%'. $id .'%'],
         ])->orderBy('updated_at', 'desc') -> paginate(8);
