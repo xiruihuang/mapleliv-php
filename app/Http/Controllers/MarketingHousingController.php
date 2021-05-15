@@ -34,7 +34,19 @@ class MarketingHousingController extends Controller
     public function showAllMarketingHousing(){
     	if(Auth::check()){
     		if(Auth::user()->type < 3){
-    			$housing = Housing::where('uploadTypeID', '<', 3)->orderBy('updated_at')->get();
+    			$housing = Housing::where('uploadTypeID', '<', 3)->orderBy('updated_at', 'asc')->get();
+                foreach ($housing as &$house) {
+                    $a = $house['address'] . $house['city'];
+                    $address = urlencode( $a );
+                    $url = "https://maps.googleapis.com/maps/api/geocode/json?address={$address}&key=AIzaSyBwp8S3UV9qGcY73oOYFPvIJ9dFy3ExB1Q";
+                    $resp    = json_decode( file_get_contents( $url ), true );
+                    $lat    = $resp['results'][0]['geometry']['location']['lat'] ?? '';
+                    $long   = $resp['results'][0]['geometry']['location']['lng'] ?? '';
+                    $house['lat'] = $lat;
+                    $house['lng'] = $long;
+                    $house->update();
+                }
+                return;
         		$houseIMGs = HousingIMG::all();
         		$users = User::all();
         		return view('/admin/marketingHousingManagement/showAllMarketingHousing',compact('housing', 'houseIMGs','users'));
