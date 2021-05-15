@@ -119,7 +119,7 @@
 
 
                 <a href="/">
-                    <h1 class="mt-0 mb-3 text-white">Rentkeya精选房源</h1>
+                    <h1 class="mt-0 mb-3 text-white">MapleLiv精选房源</h1>
                     <div class="breadcrumbs">
                         <p class="mb-0 text-white"><a class="text-white" href="#">Rentkeya保证品质，安心租房</p>
                 </a>
@@ -316,7 +316,7 @@
                                         <div class="row no-gutters" style="height:290px;overflow:hidden">
                                             <div style="">
                                                 @if(($h -> uploadTypeID < 3) || ($h -> isRentkeya == 1))
-                                                <span class="badge badge-success badgelayout">Rentkeya精选</span>
+                                                <span class="badge badge-success badgelayout">MapleLiv精选房源</span>
                                                 @else
                                                 <span class="badge badge-warning">General Property</span>
 

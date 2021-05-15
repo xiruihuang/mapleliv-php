@@ -71,7 +71,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12 text-center">
-                  <h1 class="mt-0 mb-3 text-white">Rentkeya精选房源</h1>
+                  <h1 class="mt-0 mb-3 text-white">MapleLiv精选房源</h1>
                   <div class="breadcrumbs">
                      
                   </div>
@@ -349,7 +349,7 @@
                                              <div class="card card-list">
                                                 
                                                    @if($h -> uploadType < 3)
-                                                      <span class="badge badge-success">Rentkeya精选</span>
+                                                      <span class="badge badge-success">MapleLiv精选房源</span>
                                                    @else
                                                       <span class="badge badge-success">大众房源</span>
                                                    @endif
@@ -600,7 +600,7 @@
                                              <div class="card card-list">
                                                 
                                                    @if($h -> uploadType < 3)
-                                                      <span class="badge badge-success">Rentkeya精选</span>
+                                                      <span class="badge badge-success">MapleLiv精选房源</span>
                                                    @else
                                                       <span class="badge badge-success">大众房源</span>
                                                    @endif
@@ -658,7 +658,7 @@
                   <div class="card card-list">
                      <a href="#">
                         @if($s -> uploadType < 3)
-                        <span class="badge badge-success">Rentkeya精选</span>
+                        <span class="badge badge-success">MapleLiv精选房源</span>
                         @else
                         <span class="badge badge-success">大众房源</span>
                         @endif
