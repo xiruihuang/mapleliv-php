@@ -34,7 +34,7 @@ class MarketingHousingController extends Controller
     public function showAllMarketingHousing(){
     	if(Auth::check()){
     		if(Auth::user()->type < 3){
-    			$housing = Housing::where('uploadTypeID', '<', 3)->orderBy('updated_at', 'asc')->get();
+    			$housing = Housing::where('uploadTypeID', '<', 3)->orderBy('updated_at')->get();
         		$houseIMGs = HousingIMG::all();
         		$users = User::all();
         		return view('/admin/marketingHousingManagement/showAllMarketingHousing',compact('housing', 'houseIMGs','users'));
