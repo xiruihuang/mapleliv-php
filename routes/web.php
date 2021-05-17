@@ -121,19 +121,7 @@ Route::get('/newSignIn', 'NewSignController@signIn');
 Route::get('/newSignOut','NewSignController@signOut');
 Route::get('/signPage', 'NewSignController@signPage');
 Route::get('/showAllSign', 'NewSignController@showAllSign');
-
 Route::get('/getTotalHour', 'NewSignController@getTotalHour');
 
-//老板权限 delete
-
-Route::get('/delete/{id}', 'HousingManaController@delete');
-
-
-//Crawler testurls
-Route::get('crawlPaginations','DataCrawlController@vanpeopleCrawl');\
-// Route::get('crawlListGet','DataCrawlController@getNewHousingList');\
-Route::get('crawlDetail/{$pageurl}','DataCrawlController@pageDetail');
-Route::get('crawlPopulate','DataCrawlController@populateCrawlList');
-
-//twilio sms message
-Route::post('/bulksms', 'DataCrawlController@bulkSendSms');
+//map
+Route::get('/showMap', 'MapController@showMap');
