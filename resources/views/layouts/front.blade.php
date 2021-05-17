@@ -142,7 +142,14 @@
                             <li class="list-inline-item" style="position: relative; left:350px;">
                                 <a class="btn btn-success btn-sm" href="/admin">后台管理系统</a>
                             </li>
+                            <li class="list-inline-item" style="position: relative; left:350px;">
+                                <a class="btn btn-success btn-sm" href="/showMap">地图找房</a>
+                            </li>
                         @endif
+                    @else
+                        <li class="list-inline-item" style="position: relative; left:350px;">
+                            <a class="btn btn-success btn-sm" href="/showMap">地图找房</a>
+                        </li>
                     @endif
                 </ul>
             </div>
