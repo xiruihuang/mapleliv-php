@@ -5,11 +5,11 @@
 <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>Rentkeya | 安家 | Login</title>
+    <title>枫窝| MapleLiving | 后台管理系统</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
     <meta content="" name="description" />
     <meta content="" name="author" />
-    
+
     <!-- ================== BEGIN BASE CSS STYLE ================== -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
@@ -20,7 +20,7 @@
     <link href="../assets/css/default/style-responsive.min.css" rel="stylesheet" />
     <link href="../assets/css/default/theme/default.css" rel="stylesheet" id="theme" />
     <!-- ================== END BASE CSS STYLE ================== -->
-    
+
     <!-- ================== BEGIN BASE JS ================== -->
     <script src="../assets/plugins/pace/pace.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
@@ -35,7 +35,7 @@
     <!-- begin #page-loader -->
     <div id="page-loader" class="fade show"><span class="spinner"></span></div>
     <!-- end #page-loader -->
-    
+
     <div class="login-cover">
         <div class="login-cover-image" style="background-image: url(../assets/img/login-bg/11.jpg)" data-id="login-cover-image"></div>
 
@@ -48,7 +48,7 @@
             <!-- begin brand -->
             <div class="login-header">
                 <div class="brand">
-                    <span class="logo"></span> <b> <a href="/">Rentkeya</a> | </b>登录
+                    <span class="logo"></span> <b> <a href="/">MapleLiving</a> | </b>登录
                     <small>海量租房真实信息，让租房简单，不再痛苦！</small>
                 </div>
                 <div class="icon">

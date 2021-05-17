@@ -135,6 +135,17 @@
         <div class="container ">
             <a class="navbar-brand text-success logo" href="/"><img src="../asset/img/mapleliv/2.1.png" class="image"
                                                                     style="height: 60px; width: 135px"/></a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 margin-auto">
+                    @if(Auth::Check())
+                        @if((Auth::user()->type == 1) || (Auth::user()->type == -1))
+                            <li class="list-inline-item" style="position: relative; left:350px;">
+                                <a class="btn btn-success btn-sm" href="/admin">后台管理系统</a>
+                            </li>
+                        @endif
+                    @endif
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
