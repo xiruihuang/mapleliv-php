@@ -9,9 +9,7 @@ class MapController extends Controller
 {
     public function showMap()
     {
-        $housings = Housing::where('uploadTypeID','<', 3)->orderBy('updated_at', 'desc')->get();
-        $this->writeJSON();
-        return view('/map/test', compact('housings'));
+        return view('/map/index');
     }
 
     public function writeJSON(){
@@ -46,6 +44,16 @@ class MapController extends Controller
         $fp = fopen('../public/map/assets/db/items.json', 'w');
         fwrite($fp, json_encode($posts));
         fclose($fp);
+    }
+
+    public function showAreaMap($id){
+
+        $housings = Housing::where([
+            ['area', 'LIKE', '%'. $id .'%'],
+        ])->orderBy('updated_at', 'desc') -> get();
+        $this->writeJSON();
+
+        return view('/map/detail', compact('housings','id'));
     }
 
 }

@@ -1,33 +1,68 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Lena - Maps - Mapbox</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lena theme">
-    <link rel="shortcut icon" href="../map/assets/img/favicons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="../map/assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../map/assets/img/favicons/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link href="../map/css/main.89d50cb6ee50eddf8f9a.css" rel="stylesheet"></head>
-<body>
+@extends('layouts.front')
+
+@section('content')
 
 
-<!-- Navbar -->
-<nav class="navbar fixed-top  flex-md-nowrap p-0 shadow-sm">
-    <a class="navbar-brand  sidebar-toggle-item" href="#">
-        <span class="typcn typcn-th-menu lena-theme-toggle-bar  d-none d-md-inline-flex "></span>
-    </a>
-</nav>
-<!-- End of Navbar -->
 
 
-<!-- Content -->
-<main role="map" class="">
+    <section class="section-padding pt-md-10 sec-pb-70 pt-8 pb-6 bg-light" >
+        <div class="container" style="position: center">
+            <div class="section-title">
 
-    <div id="mapboxMap" class="map fullscreen"></div>
-</main>
-<!-- End Content -->
-<script type="text/javascript" src="../map/main.js"></script></body>
-</html>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-xs-12">
+                    <a class="card py-5 hover-bg-primary bg-transparent" href="/showAreaMap/{{'温哥华'}}">
+                        <div class="card-body text-center">
+                            <div class="icon-md">
+                                <i class="icon-listy icon-tea-cup-1"></i>
+                            </div>
+                            <span class="h5">温哥华区域</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xs-12">
+                    <a class="card py-5 hover-bg-primary bg-transparent" href="/showAreaMap/{{'多伦多'}}">
+                        <div class="card-body text-center">
+                            <div class="icon-md">
+                                <i class="icon-listy icon-building"></i>
+                            </div>
+                            <span class="h5">多伦多区域</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xs-12">
+                    <a class="card py-5 hover-bg-primary bg-transparent" href="/showAreaMap/{{'蒙特利尔'}}">
+                        <div class="card-body text-center">
+                            <div class="icon-md">
+                                <i class="icon-listy icon-martini"></i>
+                            </div>
+                            <span class="h5">蒙特利尔区域</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+@endsection
+
+
+@section('js')
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Contact form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- select2 Js -->
+    <script src="vendor/select2/js/select2.min.js"></script>
+    <!-- Custom -->
+    <script src="js/custom.js"></script>
+@endsection

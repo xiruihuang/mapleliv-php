@@ -62,8 +62,16 @@
                      data-ts-map-zoom-position="topleft"
                      data-ts-map-scroll-wheel="0"
                      data-ts-map-zoom="11"
+                     @if($id == '温哥华')
                      data-ts-map-center-latitude="49.246292"
                      data-ts-map-center-longitude="-123.116226"
+                     @elseif ($id == '多伦多')
+                     data-ts-map-center-latitude="43.6532"
+                     data-ts-map-center-longitude="-79.3832"
+                     @else
+                     data-ts-map-center-latitude="45.5017"
+                     data-ts-map-center-longitude="-73.5673"
+                     @endif
                      data-ts-locale="en-US"
                      data-ts-currency="USD"
                      data-ts-unit="m<sup>2</sup>"
