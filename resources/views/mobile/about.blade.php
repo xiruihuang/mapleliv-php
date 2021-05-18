@@ -133,6 +133,12 @@
                     </span>
         <span class="aui-tabBar-item-text">精选</span>
     </a>
+    <a href="/showMap" class="aui-tabBar-item">
+                    <span class="aui-tabBar-item-icon">
+                        <i class="icon icon-credit"></i>
+                    </span>
+        <span class="aui-tabBar-item-text">地图找房</span>
+    </a>
 
 </footer>
 <!-- End Trusted Agents -->
