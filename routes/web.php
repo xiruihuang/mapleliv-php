@@ -125,3 +125,4 @@ Route::get('/getTotalHour', 'NewSignController@getTotalHour');
 
 //map
 Route::get('/showMap', 'MapController@showMap');
+Route::get('/showAreaMap/{id}', 'MapController@showAreaMap');
