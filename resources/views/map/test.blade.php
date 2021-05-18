@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../map/assets/css/leaflet.css">
     <link rel="stylesheet" href="../map/assets/css/style.css">
 
-    <title>MyHouse - Advanced Real Estate HTML Template by ThemeStarz</title>
+    <title>枫窝租房 | MAPLELIVING | 加拿大租房服务平台 | 地图找房</title>
 
 </head>
 
