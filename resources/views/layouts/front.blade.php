@@ -134,7 +134,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container ">
             <a class="navbar-brand text-success logo" href="/"><img src="../asset/img/mapleliv/2.1.png" class="image"
-                                                                    style="height: 60px; width: 135px"/></a>
+                                                                    style="height: 50px; width: 135px"/></a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 margin-auto">
                     @if(Auth::Check())

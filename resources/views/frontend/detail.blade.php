@@ -510,6 +510,8 @@
 
                                                 <div class="card card-list">
 
+                                                    <a href="/detail/{{$h -> id}}">
+
                                                     @if($h -> uploadType < 3)
                                                         <span class="badge badge-success">MapleLiv精选房源</span>
                                                     @else
@@ -537,6 +539,8 @@
                                                         <span><i class="mdi mdi-sofa"></i> Beds : <strong>{{$h -> beds}}</strong></span>
                                                         <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>{{$h->baths}}</strong></span>
                                                     </div>
+
+                                                    </a>
 
                                                 </div>
                                             </div>
@@ -570,6 +574,8 @@
                 @foreach($similarHousing as $s)
                     <div class="col-lg-4 col-md-4">
                         <div class="card card-list">
+
+                            <a href="/detail/{{$s -> id}}">
 
                             @foreach($IMG as $i)
                                 @if($i -> housingID == $s -> id)
