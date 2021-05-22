@@ -21,7 +21,7 @@ class MapController extends Controller
             $houseIMGs = HousingIMG::all();
 
             foreach($houseIMGs as $hi){
-                if($hi->id == $h->id){
+                if($hi->housingID == $h->id){
                     $img = $hi->filePath;
                     break;
                 }
