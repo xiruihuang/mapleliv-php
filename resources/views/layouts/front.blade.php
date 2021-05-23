@@ -8,13 +8,13 @@
     <title>枫窝租房 | MAPLELIVING | 加拿大租房服务平台 | </title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8D58YGW1SP"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXKET6V6NL"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-8D58YGW1SP');
+        gtag('config', 'G-VXKET6V6NL');
     </script>
 
     <!-- Favicon Icon -->
