@@ -76,7 +76,7 @@
     <section class="aui-scrollView">
         <div class="aui-palace">
 
-            <a href="/property" class="aui-palace-grid">
+            <a href="/propertyArea/{{'温哥华'}}" class="aui-palace-grid">
                 <div class="aui-palace-grid-icon">
                     <img src="../mobile2/images/icon-item-002.png" alt="">
                 </div>
@@ -85,7 +85,7 @@
                 </div>
             </a>
 
-            <a href="/property" class="aui-palace-grid">
+            <a href="/propertyArea/{{'多伦多'}}" class="aui-palace-grid">
                 <div class="aui-palace-grid-icon">
                     <img src="../mobile2/images/icon-item-004.png" alt="">
                 </div>
@@ -94,7 +94,7 @@
                 </div>
             </a>
 
-            <a href="/property" class="aui-palace-grid">
+            <a href="/propertyArea/{{'蒙特利尔'}}" class="aui-palace-grid">
                 <div class="aui-palace-grid-icon">
                     <img src="../mobile2/images/icon-item-004.png" alt="">
                 </div>
