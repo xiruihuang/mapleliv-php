@@ -734,7 +734,7 @@ class HousingController extends Controller
     }
     public function propertyArea($id) {
         $housings = Housing::where([
-            ['area', 'LIKE', '%'. $id .'%'],
+            ['area', 'LIKE', '%'. $id .'%'], ['status', '>', 0]
         ])->orderBy('updated_at', 'desc') -> paginate(8);
         $housing = $housings->appends($_GET);
         $houseIMGs = HousingIMG::all();
