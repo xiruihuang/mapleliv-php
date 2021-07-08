@@ -244,12 +244,12 @@
                                                     <h5 class="card-title mb-4">{{$housing -> contactPeople}}</h5>
                                                     <h6 class="card-subtitle mb-3 text-muted"><i
                                                                 class="mdi mdi-phone"></i> {{$housing -> phone}}</h6>
-                                                    <h6 class="card-subtitle mb-3 text-muted"><i
-                                                                class="mdi mdi-phone"></i>
-                                                        wechat: {{$housing -> wechat}}</h6>
-
-                                                    <h6 class="card-subtitle text-muted"><i class="mdi mdi-link"></i>
+                                                    <h6 class="card-subtitle mb-3 text-muted"><i class="mdi mdi-link"></i>
                                                         maplelivinginfo@gmail.com</h6>
+                                                    <h6 class="card-subtitle mb-3 text-muted">
+                                                        <i class="mdi mdi-phone"></i>
+                                                        wechat:/h6>
+                                                    <img class="card-img-top" src="../asset/img/mapleliv/wechat.jpg" alt="Card image cap">
                                                 </div>
 
                                             </div>
