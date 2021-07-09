@@ -31,7 +31,7 @@
                                         <li data-target="#osahansliderz" data-slide-to="0" class="active"></li>
 
                                         @php
-                                            $i = 1;
+                                            $i = 0;
                                         @endphp
 
                                         @foreach($houseIMGs as $hs)
@@ -47,19 +47,12 @@
                                     <div class="carousel-inner" role="listbox">
 
 
+
+
+
                                         @foreach($houseIMGs as $hs)
                                             @if($hs->status == 0)
                                                 <div class="carousel-item active rounded"
-                                                     style="background-image: url('{{$hs -> filePath}}')"></div>
-                                                @break
-                                            @else
-                                            @endif
-                                        @endforeach
-
-
-                                        @foreach($houseIMGs as $hs)
-                                            @if($hs->status == 0)
-                                                <div class="carousel-item rounded"
                                                      style="background-image: url('{{$hs -> filePath}}')"></div>
                                             @endif
                                         @endforeach
