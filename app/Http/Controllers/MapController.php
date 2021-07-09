@@ -30,6 +30,8 @@ class MapController extends Controller
             }
 
             $img = str_replace(' ', '%20', $img);
+            $img = str_replace('(', '%28', $img);
+            $img = str_replace(')', '%29', $img);
 
             $posts[] = array('id'=> $h->id,
                 'title' => $h->title,
