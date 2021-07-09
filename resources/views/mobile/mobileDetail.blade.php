@@ -70,13 +70,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-<style>
-    @media only screen and (max-width: 420px){
-        #featured-slider .entry-content, #featured-slider .slider-read-more-button {
-            display: block;
+    <style>
+        /*Display mobile caption*/
+        @media screen and (max-width: 699px) {
+            .main-slider .hero-caption .year {
+                font-size: 78px;
+                font-weight: 700;
+                display: block;
+            }
         }
-    }
-</style>
+
+        @media screen and (max-width: 699px) {
+            .main-slider .hero-caption .caption {
+                font-size: 28px;
+                font-weight: 700;
+                display: inline-block;
+            }
+        }
+    </style>
+
 </head>
 <body>
 
