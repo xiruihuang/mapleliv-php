@@ -119,23 +119,21 @@
                                 <div class="carousel-inner" role="listbox">
 
 
+                                    @foreach($houseIMGs as $hs)
+                                        @if($hs->status == 0)
+                                            <div class="carousel-item active rounded"
+                                                 style="background-image: url('{{$hs -> filePath}}');background-size:100% 100%;height:260px;min-height:260px"></div>
+                                            @break
+                                        @else
+                                        @endif
+                                    @endforeach
+
 
                                     @foreach($houseIMGs as $hs)
                                         @if($hs->status == 0)
                                             <div class="carousel-item rounded"></div>
                                         @endif
                                     @endforeach
-
-
-                                        @foreach($houseIMGs as $hs)
-                                            @if($hs->status == 0)
-                                                <div class="carousel-item active rounded"
-                                                     style="background-image: url('{{$hs -> filePath}}');background-size:100% 100%;height:260px;min-height:260px"></div>
-                                                @break
-                                            @else
-                                            @endif
-                                        @endforeach
-
                                 </div>
                                 <a class="carousel-control-prev" href="#osahansliderz" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
