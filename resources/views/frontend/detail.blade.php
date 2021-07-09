@@ -56,6 +56,13 @@
                                             @endif
                                         @endforeach
 
+
+                                        @foreach($houseIMGs as $hs)
+                                            @if($hs->status == 0)
+                                                <div class="carousel-item rounded"
+                                                     style="background-image: url('{{$hs -> filePath}}')"></div>
+                                            @endif
+                                        @endforeach
                                     </div>
                                     <a class="carousel-control-prev" href="#osahansliderz" role="button"
                                        data-slide="prev">
