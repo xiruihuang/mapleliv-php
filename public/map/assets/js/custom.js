@@ -18,7 +18,7 @@ $(document).ready(function($) {
 	});
 
     $(".ts-img-into-bg").each(function() {
-        $(this).css("background-image", "url("+ $(this).find("img").attr("src") +")" );
+        $(this).css("background-image", "encodeURI("+ $(this).find("img").attr("src") +")" );
     });
 
 //  Background
@@ -66,7 +66,7 @@ $(document).ready(function($) {
             }
 
             if( $this.attr("data-bg-image") !== undefined ){
-                $this.css("background-image", "url("+ $this.attr("data-bg-image") +")" );
+                $this.css("background-image", "encodeURI("+ $this.attr("data-bg-image") +")" );
 
                 $this.css("background-size", $this.attr("data-bg-size") );
                 $this.css("background-repeat", $this.attr("data-bg-repeat") );
@@ -75,7 +75,7 @@ $(document).ready(function($) {
             }
 
             if( $this.attr("data-bg-pattern") !== undefined ){
-                $this.css("background-image", "url("+ $this.attr("data-bg-pattern") +")" );
+                $this.css("background-image", "encodeURI("+ $this.attr("data-bg-pattern") +")" );
             }
 
         }
