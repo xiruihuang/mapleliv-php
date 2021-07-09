@@ -29,6 +29,8 @@ class MapController extends Controller
                 }
             }
 
+            $img = str_replace(' ', '%20', $img);
+
             $posts[] = array('id'=> $h->id,
                 'title' => $h->title,
                 'price' => $h->publicPrice,
