@@ -70,13 +70,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-<style>
-    @media only screen and (max-width: 420px){
-        #featured-slider .entry-content, #featured-slider .slider-read-more-button {
-            display: block;
-        }
-    }
-</style>
+
 </head>
 <body>
 
@@ -137,7 +131,8 @@
 
                                     @foreach($houseIMGs as $hs)
                                         @if($hs->status == 0)
-                                            <div class="carousel-item rounded"></div>
+                                            <div class="carousel-item rounded"
+                                                 style="background-image: url('{{$hs -> filePath}}');background-size:100% 100%;height:260px;min-height:260px"></div>
                                         @endif
                                     @endforeach
                                 </div>
