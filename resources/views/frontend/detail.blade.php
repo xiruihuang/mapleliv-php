@@ -49,285 +49,287 @@
 
                                         @foreach($houseIMGs as $hs)
                                             @if($hs->status == 0)
-                                                <div class="carousel-item active rounded"
-                                                     "></div>
-                                                @break
-                                            @else
-                                            @endif
-                                        @endforeach
-
-
-                                        @foreach($houseIMGs as $hs)
-                                            @if($hs->status == 0)
                                                 <div class="carousel-item rounded"
                                                      style="background-image: url('{{$hs -> filePath}}')"></div>
                                             @endif
                                         @endforeach
+
+                                        @foreach($houseIMGs as $hs)
+                                            @if($hs->status == 0)
+                                                <div class="carousel-item active rounded"
+                                                ">
                                     </div>
-                                    <a class="carousel-control-prev" href="#osahansliderz" role="button"
-                                       data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#osahansliderz" role="button"
-                                       data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
+                                    @break
+                                    @else
+                                    @endif
+                                    @endforeach
+
                                 </div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="card padding-card">
-                            <div class="card-body">
-                                <h5 class="card-title mb-3">房源描述</h5>
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="list-icon">
-                                            <i class="mdi mdi-sofa"></i>
-                                            <strong>房间:</strong>
-                                            <p class="mb-0">{{$housing -> beds}} 个房间</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="list-icon">
-                                            <i class="mdi mdi-hot-tub"></i>
-                                            <strong>卫生间:</strong>
-                                            <p class="mb-0">{{$housing -> baths}} 个卫生间</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="list-icon">
-                                            <i class="mdi mdi-car-convertible"></i>
-                                            <strong>停车位:</strong>
-                                            <p class="mb-0">{{$housing -> parking}} 个停车位</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="list-icon">
-                                            <i class="mdi mdi-move-resize-variant"></i>
-                                            <strong>家具:</strong>
-                                            @if($housing -> furnitures == 1)
-                                                <p class="mb-0">有</p>
-                                            @else
-                                                <p class="mb-0">没有</p>
-                                            @endif
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="list-icon">
-                                            <i class="mdi mdi-floor-plan"></i>
-                                            <strong>楼层:</strong>
-                                            <p class="mb-0">{{$housing -> floor}} 层</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="list-icon">
-                                            <i class="mdi mdi-move-resize-variant"></i>
-                                            <strong>房龄:</strong>
-                                            <p class="mb-0">{{$housing -> housingAges}} 年</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <textarea class="form-control" rows="5"
-                                          style="border-color: white; background-color: white">{{$housing -> description}}</textarea>
-
+                                <a class="carousel-control-prev" href="#osahansliderz" role="button"
+                                   data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#osahansliderz" role="button"
+                                   data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
-                        <div class="card padding-card">
-                            <div class="card-body">
-                                <h5 class="card-title mb-3">其他信息</h5>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6">
-                                        <ul class="sidebar-card-list">
-                                            @if($housing -> washingMachines == 1)
-                                                <li><a href="#"><i
-                                                                class="mdi mdi-checkbox-marked-outline text-success"></i>
-                                                        洗衣机 </a></li>
-                                            @else
-                                                <li><a href="#"><i class="mdi mdi-close-box-outline text-danger"></i>
-                                                        洗衣机 </a></li>
-                                            @endif
 
-                                            @if($housing -> dishWasher == 1)
-                                                <li><a href="#"><i
-                                                                class="mdi mdi-checkbox-marked-outline text-success"></i>
-                                                        洗碗机 </a></li>
-                                            @else
-                                                <li><a href="#"><i class="mdi mdi-close-box-outline text-danger"></i>
-                                                        洗碗机 </a></li>
-                                            @endif
-
-                                            @if($housing -> elevator == 1)
-                                                <li><a href="#"><i
-                                                                class="mdi mdi-checkbox-marked-outline text-success"></i>
-                                                        电梯 </a></li>
-                                            @else
-                                                <li><a href="#"><i class="mdi mdi-close-box-outline text-danger"></i> 电梯
-                                                    </a></li>
-                                            @endif
+                    </div>
 
 
-                                        </ul>
+                    <div class="card padding-card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">房源描述</h5>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="list-icon">
+                                        <i class="mdi mdi-sofa"></i>
+                                        <strong>房间:</strong>
+                                        <p class="mb-0">{{$housing -> beds}} 个房间</p>
                                     </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <ul class="sidebar-card-list">
-                                            @if($housing -> electricity == 1)
-                                                <li><a href="#"><i
-                                                                class="mdi mdi-checkbox-marked-outline text-success"></i>
-                                                        包电费 </a></li>
-                                            @else
-                                                <li><a href="#"><i class="mdi mdi-close-box-outline text-danger"></i>
-                                                        包电费 </a></li>
-                                            @endif
-
-                                            @if($housing -> web == 1)
-                                                <li><a href="#"><i
-                                                                class="mdi mdi-checkbox-marked-outline text-success"></i>
-                                                        包网费 </a></li>
-                                            @else
-                                                <li><a href="#"><i class="mdi mdi-close-box-outline text-danger"></i>
-                                                        包网费 </a></li>
-                                            @endif
-
-                                            @if($housing -> oven == 1)
-                                                <li><a href="#"><i
-                                                                class="mdi mdi-checkbox-marked-outline text-success"></i>
-                                                        烤箱 </a></li>
-                                            @else
-                                                <li><a href="#"><i class="mdi mdi-close-box-outline text-danger"></i> 烤箱
-                                                    </a></li>
-                                            @endif
-                                        </ul>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="list-icon">
+                                        <i class="mdi mdi-hot-tub"></i>
+                                        <strong>卫生间:</strong>
+                                        <p class="mb-0">{{$housing -> baths}} 个卫生间</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="list-icon">
+                                        <i class="mdi mdi-car-convertible"></i>
+                                        <strong>停车位:</strong>
+                                        <p class="mb-0">{{$housing -> parking}} 个停车位</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card padding-card">
-                            <div class="card-body">
-                                <h5 class="card-title mb-3">房源位置</h5>
-                                <div class="row mb-3">
-                                    <div class="col-lg-6 col-md-6">
-                                        <p><strong class="text-dark">地址: </strong> {{$housing -> address}}</p>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="list-icon">
+                                        <i class="mdi mdi-move-resize-variant"></i>
+                                        <strong>家具:</strong>
+                                        @if($housing -> furnitures == 1)
+                                            <p class="mb-0">有</p>
+                                        @else
+                                            <p class="mb-0">没有</p>
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="list-icon">
+                                        <i class="mdi mdi-floor-plan"></i>
+                                        <strong>楼层:</strong>
+                                        <p class="mb-0">{{$housing -> floor}} 层</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="list-icon">
+                                        <i class="mdi mdi-move-resize-variant"></i>
+                                        <strong>房龄:</strong>
+                                        <p class="mb-0">{{$housing -> housingAges}} 年</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <textarea class="form-control" rows="5"
+                                      style="border-color: white; background-color: white">{{$housing -> description}}</textarea>
 
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <p><strong class="text-dark">城市 :</strong> {{$housing -> city}}</p>
-                                        <p><strong class="text-dark">地域 :</strong> {{$housing -> area}}</p>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="card padding-card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">其他信息</h5>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <ul class="sidebar-card-list">
+                                        @if($housing -> washingMachines == 1)
+                                            <li><a href="#"><i
+                                                            class="mdi mdi-checkbox-marked-outline text-success"></i>
+                                                    洗衣机 </a></li>
+                                        @else
+                                            <li><a href="#"><i class="mdi mdi-close-box-outline text-danger"></i>
+                                                    洗衣机 </a></li>
+                                        @endif
+
+                                        @if($housing -> dishWasher == 1)
+                                            <li><a href="#"><i
+                                                            class="mdi mdi-checkbox-marked-outline text-success"></i>
+                                                    洗碗机 </a></li>
+                                        @else
+                                            <li><a href="#"><i class="mdi mdi-close-box-outline text-danger"></i>
+                                                    洗碗机 </a></li>
+                                        @endif
+
+                                        @if($housing -> elevator == 1)
+                                            <li><a href="#"><i
+                                                            class="mdi mdi-checkbox-marked-outline text-success"></i>
+                                                    电梯 </a></li>
+                                        @else
+                                            <li><a href="#"><i class="mdi mdi-close-box-outline text-danger"></i> 电梯
+                                                </a></li>
+                                        @endif
+
+
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <ul class="sidebar-card-list">
+                                        @if($housing -> electricity == 1)
+                                            <li><a href="#"><i
+                                                            class="mdi mdi-checkbox-marked-outline text-success"></i>
+                                                    包电费 </a></li>
+                                        @else
+                                            <li><a href="#"><i class="mdi mdi-close-box-outline text-danger"></i>
+                                                    包电费 </a></li>
+                                        @endif
+
+                                        @if($housing -> web == 1)
+                                            <li><a href="#"><i
+                                                            class="mdi mdi-checkbox-marked-outline text-success"></i>
+                                                    包网费 </a></li>
+                                        @else
+                                            <li><a href="#"><i class="mdi mdi-close-box-outline text-danger"></i>
+                                                    包网费 </a></li>
+                                        @endif
+
+                                        @if($housing -> oven == 1)
+                                            <li><a href="#"><i
+                                                            class="mdi mdi-checkbox-marked-outline text-success"></i>
+                                                    烤箱 </a></li>
+                                        @else
+                                            <li><a href="#"><i class="mdi mdi-close-box-outline text-danger"></i> 烤箱
+                                                </a></li>
+                                        @endif
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="card sidebar-card">
-                            <div class="card-body">
-                                <h5 class="card-title mb-4">租金：</h5>
-                                <h2 class="text-success mb-0 mt-3">
-                                    ${{$housing -> publicPrice}} <small>/ 月</small>
-                                </h2>
+                    <div class="card padding-card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">房源位置</h5>
+                            <div class="row mb-3">
+                                <div class="col-lg-6 col-md-6">
+                                    <p><strong class="text-dark">地址: </strong> {{$housing -> address}}</p>
 
-                                <div id="featured-properties">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div class="card card-list">
-
-                                                <!--
-                                                <img class="card-img-top" src="../asset/img/agent.jpg" alt="Card image cap">
-                                             -->
-                                                <div class="card-body pb-0">
-                                                    <h5 class="card-title mb-4">枫窝 | MapleLiving</h5>
-                                                    <h5 class="card-title mb-4">{{$housing -> contactPeople}}</h5>
-                                                    <h6 class="card-subtitle mb-3 text-muted"><i
-                                                                class="mdi mdi-phone"></i> {{$housing -> phone}}</h6>
-                                                    <h6 class="card-subtitle mb-3 text-muted"><i class="mdi mdi-link"></i>
-                                                        maplelivinginfo@gmail.com</h6>
-                                                    <h6 class="card-subtitle mb-3 text-muted">
-                                                        <i class="mdi mdi-phone"></i>
-                                                        wechat:/h6>
-                                                    <img class="card-img-top" src="../asset/img/mapleliv/wechat.jpg" alt="Card image cap">
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <p><strong class="text-dark">城市 :</strong> {{$housing -> city}}</p>
+                                    <p><strong class="text-dark">地域 :</strong> {{$housing -> area}}</p>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="card sidebar-card">
-                            <div class="card-body">
-                                <h5 class="card-title mb-4">联系我们看房</h5>
-                                <form name="sentMessage">
-                                    <div class="control-group form-group">
-                                        <div class="controls">
-                                            <label>您的名字 <span class="text-danger">*</span></label>
-                                            <input type="text" placeholder="..." class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="control-group form-group">
-                                        <div class="controls">
-                                            <label>邮箱 <span class="text-danger">*</span></label>
-                                            <input type="text" placeholder="..." class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="control-group form-group">
-                                        <div class="controls">
-                                            <label>电话 <span class="text-danger">*</span></label>
-                                            <input type="text" placeholder="..." class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="control-group form-group">
-                                        <div class="controls">
-                                            <label>给我们留言 <span class="text-danger">*</span></label>
-                                            <textarea rows="5" cols="50" class="form-control"></textarea>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn btn-success btn-block">提交</button>
-                                </form>
-                            </div>
-                        </div>
-                        <!--
-                                                <div class="card sidebar-card">
-                                                   <div class="card-body">
-                                                      <h5 class="card-title mb-4">Mortage Calculator</h5>
-                                                      <form name="sentMessage">
-                                                         <div class="control-group form-group">
-                                                            <div class="controls">
-                                                               <label>Sale Price <span class="text-danger">*</span></label>
-                                                               <input type="text" placeholder="$" class="form-control" required>
-                                                            </div>
-                                                         </div>
-                                                         <div class="control-group form-group">
-                                                            <div class="controls">
-                                                               <label>Down payment <span class="text-danger">*</span></label>
-                                                               <input type="text" placeholder="$"  class="form-control" required>
-                                                            </div>
-                                                         </div>
-                                                         <div class="control-group form-group">
-                                                            <div class="controls">
-                                                               <label>Term <span class="text-danger">*</span></label>
-                                                               <input type="text" placeholder="Years"  class="form-control" required>
-                                                            </div>
-                                                         </div>
-                                                         <div class="control-group form-group">
-                                                            <div class="controls">
-                                                               <label>Interest Rate <span class="text-danger">*</span></label>
-                                                               <input type="text" placeholder="%" class="form-control" required>
-                                                            </div>
-                                                         </div>
-                                                         <button type="submit" class="btn btn-success btn-block">CALCULATE</button>
-                                                      </form>
-                                                   </div>
-                                                </div>
-                                                -->
-
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="card sidebar-card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">租金：</h5>
+                            <h2 class="text-success mb-0 mt-3">
+                                ${{$housing -> publicPrice}} <small>/ 月</small>
+                            </h2>
+
+                            <div id="featured-properties">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card card-list">
+
+                                            <!--
+                                            <img class="card-img-top" src="../asset/img/agent.jpg" alt="Card image cap">
+                                         -->
+                                            <div class="card-body pb-0">
+                                                <h5 class="card-title mb-4">枫窝 | MapleLiving</h5>
+                                                <h5 class="card-title mb-4">{{$housing -> contactPeople}}</h5>
+                                                <h6 class="card-subtitle mb-3 text-muted"><i
+                                                            class="mdi mdi-phone"></i> {{$housing -> phone}}</h6>
+                                                <h6 class="card-subtitle mb-3 text-muted"><i class="mdi mdi-link"></i>
+                                                    maplelivinginfo@gmail.com</h6>
+                                                <h6 class="card-subtitle mb-3 text-muted">
+                                                    <i class="mdi mdi-phone"></i>
+                                                    wechat:/h6>
+                                                    <img class="card-img-top" src="../asset/img/mapleliv/wechat.jpg"
+                                                         alt="Card image cap">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card sidebar-card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">联系我们看房</h5>
+                            <form name="sentMessage">
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <label>您的名字 <span class="text-danger">*</span></label>
+                                        <input type="text" placeholder="..." class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <label>邮箱 <span class="text-danger">*</span></label>
+                                        <input type="text" placeholder="..." class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <label>电话 <span class="text-danger">*</span></label>
+                                        <input type="text" placeholder="..." class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <label>给我们留言 <span class="text-danger">*</span></label>
+                                        <textarea rows="5" cols="50" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block">提交</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--
+                                            <div class="card sidebar-card">
+                                               <div class="card-body">
+                                                  <h5 class="card-title mb-4">Mortage Calculator</h5>
+                                                  <form name="sentMessage">
+                                                     <div class="control-group form-group">
+                                                        <div class="controls">
+                                                           <label>Sale Price <span class="text-danger">*</span></label>
+                                                           <input type="text" placeholder="$" class="form-control" required>
+                                                        </div>
+                                                     </div>
+                                                     <div class="control-group form-group">
+                                                        <div class="controls">
+                                                           <label>Down payment <span class="text-danger">*</span></label>
+                                                           <input type="text" placeholder="$"  class="form-control" required>
+                                                        </div>
+                                                     </div>
+                                                     <div class="control-group form-group">
+                                                        <div class="controls">
+                                                           <label>Term <span class="text-danger">*</span></label>
+                                                           <input type="text" placeholder="Years"  class="form-control" required>
+                                                        </div>
+                                                     </div>
+                                                     <div class="control-group form-group">
+                                                        <div class="controls">
+                                                           <label>Interest Rate <span class="text-danger">*</span></label>
+                                                           <input type="text" placeholder="%" class="form-control" required>
+                                                        </div>
+                                                     </div>
+                                                     <button type="submit" class="btn btn-success btn-block">CALCULATE</button>
+                                                  </form>
+                                               </div>
+                                            </div>
+                                            -->
+
+                </div>
+            </div>
             </div>
         </section>
     @else
@@ -512,33 +514,33 @@
 
                                                     <a href="/detail/{{$h -> id}}">
 
-                                                    @if($h -> uploadType < 3)
-                                                        <span class="badge badge-success">MapleLiv精选房源</span>
-                                                    @else
-                                                        <span class="badge badge-success">大众房源</span>
-                                                    @endif
-                                                    @foreach($IMG as $i)
-                                                        @if($i -> housingID == $h -> id)
-                                                            <img class="card-img-top" src="{{$i -> filePath }}"
-                                                                 alt="Card image cap">
-                                                            @break
+                                                        @if($h -> uploadType < 3)
+                                                            <span class="badge badge-success">MapleLiv精选房源</span>
+                                                        @else
+                                                            <span class="badge badge-success">大众房源</span>
                                                         @endif
-                                                    @endforeach
-                                                    <div class="card-body">
-                                                        <a href="/detail/{{$h -> id}}">
-                                                            <h5 class="card-title">{{str_limit($h -> title, 27)}}</h5>
-                                                        </a>
-                                                        <h6 class="card-subtitle mb-2 text-muted"><i
-                                                                    class="mdi mdi-home-map-marker"></i> {{$h -> address}}
-                                                            , {{$h-> city}}</h6>
-                                                        <h2 class="text-success mb-0 mt-3">
-                                                            ${{$h -> publicPrice}} <small>/month</small>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="card-footer">
-                                                        <span><i class="mdi mdi-sofa"></i> Beds : <strong>{{$h -> beds}}</strong></span>
-                                                        <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>{{$h->baths}}</strong></span>
-                                                    </div>
+                                                        @foreach($IMG as $i)
+                                                            @if($i -> housingID == $h -> id)
+                                                                <img class="card-img-top" src="{{$i -> filePath }}"
+                                                                     alt="Card image cap">
+                                                                @break
+                                                            @endif
+                                                        @endforeach
+                                                        <div class="card-body">
+                                                            <a href="/detail/{{$h -> id}}">
+                                                                <h5 class="card-title">{{str_limit($h -> title, 27)}}</h5>
+                                                            </a>
+                                                            <h6 class="card-subtitle mb-2 text-muted"><i
+                                                                        class="mdi mdi-home-map-marker"></i> {{$h -> address}}
+                                                                , {{$h-> city}}</h6>
+                                                            <h2 class="text-success mb-0 mt-3">
+                                                                ${{$h -> publicPrice}} <small>/month</small>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <span><i class="mdi mdi-sofa"></i> Beds : <strong>{{$h -> beds}}</strong></span>
+                                                            <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>{{$h->baths}}</strong></span>
+                                                        </div>
 
                                                     </a>
 
@@ -577,26 +579,27 @@
 
                             <a href="/detail/{{$s -> id}}">
 
-                            @foreach($IMG as $i)
-                                @if($i -> housingID == $s -> id)
-                                    <img class="card-img-top" src="{{$i -> filePath }}" alt="Card image cap">
-                                    @break
-                                @endif
-                            @endforeach
+                                @foreach($IMG as $i)
+                                    @if($i -> housingID == $s -> id)
+                                        <img class="card-img-top" src="{{$i -> filePath }}" alt="Card image cap">
+                                        @break
+                                    @endif
+                                @endforeach
 
-                            <div class="card-body">
-                                <h5 class="card-title">{{str_limit($s->title, 27)}}</h5>
-                                <h6 class="card-subtitle mb-2 text-muted"><i
-                                            class="mdi mdi-home-map-marker"></i> {{$s ->address}}, {{$s -> city}}</h6>
-                                <h2 class="text-success mb-0 mt-3">
-                                    ${{$s -> publicPrice}} <small>/month</small>
-                                </h2>
-                            </div>
-                            <div class="card-footer">
-                                <span><i class="mdi mdi-sofa"></i> Beds : <strong>{{$s -> beds}}</strong></span>
-                                <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>{{$s -> baths}}</strong></span>
+                                <div class="card-body">
+                                    <h5 class="card-title">{{str_limit($s->title, 27)}}</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"><i
+                                                class="mdi mdi-home-map-marker"></i> {{$s ->address}}, {{$s -> city}}
+                                    </h6>
+                                    <h2 class="text-success mb-0 mt-3">
+                                        ${{$s -> publicPrice}} <small>/month</small>
+                                    </h2>
+                                </div>
+                                <div class="card-footer">
+                                    <span><i class="mdi mdi-sofa"></i> Beds : <strong>{{$s -> beds}}</strong></span>
+                                    <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>{{$s -> baths}}</strong></span>
 
-                            </div>
+                                </div>
                             </a>
                         </div>
                     </div>
