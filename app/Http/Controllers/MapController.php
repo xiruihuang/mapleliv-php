@@ -15,7 +15,7 @@ class MapController extends Controller
     public function writeJSON(){
 
         $housings = Housing::where([
-            ['uploadTypeID','<', 3], ['status', '>', 0]
+            ['uploadTypeID','<', 3], ['status', '=', 1]
         ])->orderBy('updated_at', 'desc')->get();
 
         foreach($housings as $h) {
