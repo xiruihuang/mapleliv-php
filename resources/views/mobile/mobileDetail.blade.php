@@ -131,8 +131,7 @@
 
                                     @foreach($houseIMGs as $hs)
                                         @if($hs->status == 0)
-                                            <div class="carousel-item rounded"
-                                                 style="background-image: url('{{$hs -> filePath}}');background-size:100% 100%;height:260px;min-height:260px"></div>
+                                            <div class="carousel-item rounded"></div>
                                         @endif
                                     @endforeach
                                 </div>

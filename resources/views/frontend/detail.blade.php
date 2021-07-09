@@ -50,7 +50,7 @@
                                         @foreach($houseIMGs as $hs)
                                             @if($hs->status == 0)
                                                 <div class="carousel-item active rounded"
-                                                     style="background-image: url('{{$hs -> filePath}}')"></div>
+                                                     "></div>
                                                 @break
                                             @else
                                             @endif
