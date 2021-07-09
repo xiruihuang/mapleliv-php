@@ -97,6 +97,11 @@
                 width: 30%;
             }
         }
+        @media only screen and (max-width: 420px){
+            #featured-slider .entry-content, #featured-slider .slider-read-more-button {
+                display: block;
+            }
+        }
     </style>
     @yield ('welcome-css')
     @yield ('rentkeyaProperty-css')

@@ -70,7 +70,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-
+<style>
+    @media only screen and (max-width: 420px){
+        #featured-slider .entry-content, #featured-slider .slider-read-more-button {
+            display: block;
+        }
+    }
+</style>
 </head>
 <body>
 
@@ -135,11 +141,11 @@
                                         @endif
                                     @endforeach
                                 </div>
-                                <a class="carousel-control-prev" href="#osahansliderz" role="button" data-slide="prev">
+                                <a class="carousel-control-prev" href="#osahansliderz" role="button" data-slide="prev" style="display: block">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
                                 </a>
-                                <a class="carousel-control-next" href="#osahansliderz" role="button" data-slide="next">
+                                <a class="carousel-control-next" href="#osahansliderz" role="button" data-slide="next" style="display: block">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>
                                 </a>
