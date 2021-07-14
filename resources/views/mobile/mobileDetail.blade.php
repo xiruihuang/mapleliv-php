@@ -312,7 +312,7 @@
                                                     maplelivinginfo@gmail.com</h6>
                                                 <h6 class="card-subtitle mb-3 text-muted">
                                                                                                         <i class="mdi mdi-phone"></i>
-                                                                                                        wechat:/h6>
+                                                                                                        wechat:</h6>
                                                                                                     <img class="card-img-top" src="../asset/img/mapleliv/wechat.jpg" alt="Card image cap">
                                                 @if(Auth::check())
                                                     <a href="/addFavorite/{{$housing->id}}">添加收藏</a>
