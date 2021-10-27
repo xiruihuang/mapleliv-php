@@ -103,6 +103,15 @@
                 </div>
             </a>
 
+            <a href="/propertyArea/{{'渥太华'}}" class="aui-palace-grid">
+                <div class="aui-palace-grid-icon">
+                    <img src="../mobile2/images/icon-item-004.png" alt="">
+                </div>
+                <div class="aui-palace-grid-text">
+                    <h2>渥太华</h2>
+                </div>
+            </a>
+
 
             <a href="/mobileAbout" class="aui-palace-grid">
                 <div class="aui-palace-grid-icon">

@@ -11,7 +11,7 @@
 
             </div>
             <div class="row">
-                <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="col-md-6 col-lg-6 col-xs-12">
                     <a class="card py-5 hover-bg-primary bg-transparent" href="/showAreaMap/{{'温哥华'}}">
                         <div class="card-body text-center">
                             <div class="icon-md">
@@ -22,7 +22,7 @@
                     </a>
                 </div>
 
-                <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="col-md-6 col-lg-6 col-xs-12">
                     <a class="card py-5 hover-bg-primary bg-transparent" href="/showAreaMap/{{'多伦多'}}">
                         <div class="card-body text-center">
                             <div class="icon-md">
@@ -33,7 +33,7 @@
                     </a>
                 </div>
 
-                <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="col-md-6 col-lg-6 col-xs-12">
                     <a class="card py-5 hover-bg-primary bg-transparent" href="/showAreaMap/{{'蒙特利尔'}}">
                         <div class="card-body text-center">
                             <div class="icon-md">
@@ -44,6 +44,16 @@
                     </a>
                 </div>
 
+                <div class="col-md-6 col-lg-6 col-xs-12">
+                    <a class="card py-5 hover-bg-primary bg-transparent" href="/showAreaMap/{{'渥太华'}}">
+                        <div class="card-body text-center">
+                            <div class="icon-md">
+                                <i class="icon-listy icon-martini"></i>
+                            </div>
+                            <span class="h5">渥太华区域</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>

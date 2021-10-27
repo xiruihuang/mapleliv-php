@@ -255,9 +255,10 @@
                     <br/>
                     <div class="row margin-auto">
 
-                        <a class="btn btn-outline-success" style="margin: 0 auto; width:33% " href="/propertyArea/{{'多伦多'}}">多伦多房源</a>
-                        <a class="btn btn-outline-success" style="margin: 0 auto; width:33%" href="/propertyArea/{{'温哥华'}}">温哥华房源</a>
-                        <a class="btn btn-outline-success" style="margin: 0 auto; width:33%" href="/propertyArea/{{'蒙特利尔'}}">蒙特利尔房源</a>
+                        <a class="btn btn-outline-success" style="margin: 0 auto; width:25% " href="/propertyArea/{{'多伦多'}}">多伦多房源</a>
+                        <a class="btn btn-outline-success" style="margin: 0 auto; width:25%" href="/propertyArea/{{'温哥华'}}">温哥华房源</a>
+                        <a class="btn btn-outline-success" style="margin: 0 auto; width:25%" href="/propertyArea/{{'蒙特利尔'}}">蒙特利尔房源</a>
+                        <a class="btn btn-outline-success" style="margin: 0 auto; width:25%" href="/propertyArea/{{'渥太华'}}">渥太华房源</a>
 
                     </div>
 
