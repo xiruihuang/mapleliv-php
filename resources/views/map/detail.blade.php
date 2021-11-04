@@ -69,7 +69,7 @@
                      data-ts-map-center-latitude="43.6532"
                      data-ts-map-center-longitude="-79.3832"
                      @elseif ($id == '渥太华')
-                     ddata-ts-map-center-latitude="45.285575167497235"
+                     data-ts-map-center-latitude="45.285575167497235"
                      data-ts-map-center-longitude="-75.73299714090014"
                      @else
                      data-ts-map-center-latitude="45.5017"
