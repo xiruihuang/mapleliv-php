@@ -54,6 +54,16 @@
                         </div>
                     </a>
                 </div>
+                <div class="col-md-6 col-lg-6 col-xs-12">
+                    <a class="card py-5 hover-bg-primary bg-transparent" href="/showAreaMap/{{'埃德蒙顿'}}">
+                        <div class="card-body text-center">
+                            <div class="icon-md">
+                                <i class="icon-listy icon-martini"></i>
+                            </div>
+                            <span class="h5">埃德蒙顿区域</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
