@@ -114,7 +114,6 @@
                             <span class="number">2</span>
                             <span class="info text-ellipsis">
 									租房喜好
-									<small class="text-ellipsis">parking, oven...</small>
 								</span>
                         </a>
                     </li>
@@ -123,7 +122,6 @@
                             <span class="number">3</span>
                             <span class="info text-ellipsis">
 									上传文件
-									<small class="text-ellipsis">landlore contact</small>
 								</span>
                         </a>
                     </li>
