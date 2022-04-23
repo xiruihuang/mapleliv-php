@@ -11,14 +11,16 @@ class SendEmialForm extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $data;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
         //
+        $this->data = $data;
     }
 
     /**
@@ -28,6 +30,12 @@ class SendEmialForm extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.attachment')->subject('testest')->attach(public_path('/storeimg/1.1.jpg'));
+        return $this->markdown('email.attachment')->subject('testest')->attach($this->data['studentPermit']->getRealPath(), [
+            'as' => $this->data['studentPermit']->getClientOriginalName()
+        ])->attach($this->data['offer']->getRealPath(), [
+            'as' => $this->data['offer']->getClientOriginalName()
+        ])->attach($this->data['passport']->getRealPath(), [
+            'as' => $this->data['passport']->getClientOriginalName()
+        ])->with($this->data);
     }
 }

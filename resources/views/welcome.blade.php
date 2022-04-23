@@ -190,7 +190,7 @@
 @stop
 
 @section('content')
-
+    @include('sweet::alert')
     <!-- Main Slider With Form -->
     <section class="osahan-slider">
         <div id="osahanslider" class="carousel slide" data-ride="carousel">

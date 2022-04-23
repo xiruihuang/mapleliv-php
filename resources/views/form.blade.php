@@ -1,6 +1,57 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <title>枫窝| MapleLiving | 后台管理系统</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5SNL4GP');</script>
+    <!-- End Google Tag Manager -->
 
-@section('css')
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109935869-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109935869-1');
+    </script>
+
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
+    <link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet"/>
+    <link href="../assets/plugins/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../assets/plugins/font-awesome/5.0/css/fontawesome-all.min.css" rel="stylesheet"/>
+    <link href="../assets/plugins/animate/animate.min.css" rel="stylesheet"/>
+    <link href="../assets/css/default/style.min.css" rel="stylesheet"/>
+    <link href="../assets/css/default/style-responsive.min.css" rel="stylesheet"/>
+    <link href="../assets/css/default/theme/default.css" rel="stylesheet" id="theme"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <!-- ================== BEGIN BASE CSS STYLE ================== -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
@@ -27,10 +78,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- ================== END BASE JS ================== -->
-@endsection
-
-@section('content')
-
+</head>
+<body>
     @include('sweet::alert')
 
     <!-- begin #content -->
@@ -45,7 +94,7 @@
         <!-- end page-header -->
 
         <!-- begin wizard-form -->
-        <form method="POST" name="form-wizard" action="/createRentkeyaProperty" class="form-control-with-bg" enctype="multipart/form-data">
+        <form method="POST" name="form-wizard" action="/sendForm" class="form-control-with-bg" enctype="multipart/form-data">
         {{ csrf_field() }}
         <!-- begin wizard -->
             <div id="wizard">
@@ -118,10 +167,10 @@
                                             <div class="row row-space-6">
                                                 <div class="col-6">
                                                     <select class="form-control" name="occupation">
-                                                        <option value="student"> 学生 </option>
-                                                        <option value="accompanyStudent"> 陪读 </option>
-                                                        <option value="work"> 工作 </option>
-                                                        <option value="other"> 其他 </option>
+                                                        <option value="Student"> 学生 </option>
+                                                        <option value="AccompanyStudent"> 陪读 </option>
+                                                        <option value="Work"> 工作 </option>
+                                                        <option value="Other"> 其他 </option>
                                                     </select>
                                                 </div>
 
@@ -136,11 +185,11 @@
                                             <div class="row row-space-6">
                                                 <div class="col-6">
                                                     <select class="form-control" name="colleage">
-                                                        <option value="student"> 多伦多大学 </option>
-                                                        <option value="accompanyStudent"> 瑞尔森大学 </option>
-                                                        <option value="work"> OCAD </option>
-                                                        <option value="other"> 约克大学 </option>
-                                                        <option value="other"> 其他 </option>
+                                                        <option value="UofT"> 多伦多大学 </option>
+                                                        <option value="Ryerson"> 瑞尔森大学 </option>
+                                                        <option value="OCAD"> OCAD </option>
+                                                        <option value="YorkUniversity"> 约克大学 </option>
+                                                        <option value="Other"> 其他 </option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -174,11 +223,11 @@
                                             <div class="row row-space-6">
                                                 <div class="col-6">
                                                     <select class="form-control" name="area">
-                                                        <option value="1"> 多伦多市中心 </option>
-                                                        <option value="2"> 北约克 </option>
-                                                        <option value="1"> 密西沙加 </option>
-                                                        <option value="2"> 世嘉堡 </option>
-                                                        <option value="1"> 其他 </option>
+                                                        <option value="Downtown Toronto"> 多伦多市中心 </option>
+                                                        <option value="North York"> 北约克 </option>
+                                                        <option value="Mississauga"> 密西沙加 </option>
+                                                        <option value="Scarborough"> 世嘉堡 </option>
+                                                        <option value="Other"> 其他 </option>
                                                     </select>
                                                 </div>
 
@@ -194,8 +243,8 @@
                                             <div class="row row-space-6">
                                                 <div class="col-6">
                                                     <select class="form-control" name="pat">
-                                                        <option value="1"> 是 </option>
-                                                        <option value="2"> 否 </option>
+                                                        <option value="Yes"> 是 </option>
+                                                        <option value="No"> 否 </option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -210,9 +259,9 @@
                                             <div class="row row-space-6">
                                                 <div class="col-6">
                                                     <select class="form-control" name="budget">
-                                                        <option value="1"> $1700 - $2200 </option>
-                                                        <option value="2"> $2200 - 3000 </option>
-                                                        <option value="2"> $3000以上 </option>
+                                                        <option value="$1700 - $2200"> $1700 - $2200 </option>
+                                                        <option value="$2200 - 3000"> $2200 - 3000 </option>
+                                                        <option value="$3000以上"> $3000以上 </option>
                                                     </select>
                                                 </div>
 
@@ -228,8 +277,8 @@
                                             <div class="row row-space-6">
                                                 <div class="col-6">
                                                     <select class="form-control" name="furnitures">
-                                                        <option value="1"> 是 </option>
-                                                        <option value="2"> 否 </option>
+                                                        <option value="Yes"> 是 </option>
+                                                        <option value="No"> 否 </option>
                                                     </select>
                                                 </div>
 
@@ -246,8 +295,8 @@
                                             <div class="row row-space-6">
                                                 <div class="col-6">
                                                     <select class="form-control" name="park">
-                                                        <option value="1"> 是 </option>
-                                                        <option value="2"> 否 </option>
+                                                        <option value="Yes"> 是 </option>
+                                                        <option value="No"> 否 </option>
                                                     </select>
                                                 </div>
 
@@ -262,8 +311,8 @@
                                             <div class="row row-space-6">
                                                 <div class="col-6">
                                                     <select class="form-control" name="check">
-                                                        <option value="1"> 是 </option>
-                                                        <option value="2"> 否 </option>
+                                                        <option value="Yes"> 是 </option>
+                                                        <option value="No"> 否 </option>
                                                     </select>
                                                 </div>
 
@@ -278,9 +327,9 @@
                                             <div class="row row-space-6">
                                                 <div class="col-6">
                                                     <select class="form-control" name="prepaid">
-                                                        <option value="1"> 首一尾五 </option>
-                                                        <option value="2"> 全面 </option>
-                                                        <option value="1"> 首一尾三 </option>
+                                                        <option value="首一尾五"> 首一尾五 </option>
+                                                        <option value="全面"> 全面 </option>
+                                                        <option value="首一尾三"> 首一尾三 </option>
                                                     </select>
                                                 </div>
 
@@ -301,20 +350,20 @@
                     <div id="step-3">
                         <div class="card padding-card">
                             <div class="card-body">
-                                <h5 class="card-title mb-4">上传图片(单张图片大小不得超过2MB,否则将提交不成功)</h5>
-                                <input type="file" class="form-control" name="file[]" multiple>
+                                <h5 class="card-title mb-4">上传学签图片(大小不得超过2MB,否则将提交不成功)</h5>
+                                <input type="file" class="form-control" name="studentPermit" data-parsley-required="true">
                             </div>
                         </div>
                         <div class="card padding-card">
                             <div class="card-body">
-                                <h5 class="card-title mb-4">上传图片(单张图片大小不得超过2MB,否则将提交不成功)</h5>
-                                <input type="file" class="form-control" name="file[]" multiple>
+                                <h5 class="card-title mb-4">上传学校offer(大小不得超过2MB,否则将提交不成功)</h5>
+                                <input type="file" class="form-control" name="offer" data-parsley-required="true">
                             </div>
                         </div>
                         <div class="card padding-card">
                             <div class="card-body">
-                                <h5 class="card-title mb-4">上传图片(单张图片大小不得超过2MB,否则将提交不成功)</h5>
-                                <input type="file" class="form-control" name="file[]" multiple>
+                                <h5 class="card-title mb-4">上传护照头像页(大小不得超过2MB,否则将提交不成功)</h5>
+                                <input type="file" class="form-control" name="passport" data-parsley-required="true">
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary pull-right">提交</button>
@@ -326,15 +375,11 @@
                 <!-- end step-4 -->
             </div>
             <!-- end wizard-content -->
-    </div>
-    <!-- end wizard -->
-    </form>
+             <!-- end wizard -->
+        </form>
     <!-- end wizard-form -->
     </div>
     <!-- end #content -->
-@endsection
-
-@section('js')
     <!-- ================== BEGIN BASE JS ================== -->
     <script src="../assets/plugins/jquery/jquery-3.2.1.min.js"></script>
     <script src="../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -367,4 +412,5 @@
 
         });
     </script>
-@endsection
+</body>
+</html>
