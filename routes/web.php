@@ -127,4 +127,4 @@ Route::get('/getTotalHour', 'NewSignController@getTotalHour');
 Route::get('/showMap', 'MapController@showMap');
 Route::get('/showAreaMap/{id}', 'MapController@showAreaMap');
 
-Route::get('/sendtest', 'SendForm@send');
+Route::get('/form', 'SendForm@form');

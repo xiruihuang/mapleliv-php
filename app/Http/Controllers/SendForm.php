@@ -13,4 +13,8 @@ class SendForm extends Controller
         Mail::to('576771189@qq.com')->send(new SendEmialForm());
         return back()->with('success');
     }
+
+    function form() {
+        return view('form');
+    }
 }
