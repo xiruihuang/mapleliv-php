@@ -326,7 +326,7 @@
                                                 <div class="col-6">
                                                     <select class="form-control" name="prepaid">
                                                         <option value="首一尾五"> 首一尾五 </option>
-                                                        <option value="全面"> 全面 </option>
+                                                        <option value="全年"> 全年 </option>
                                                         <option value="首一尾三"> 首一尾三 </option>
                                                     </select>
                                                 </div>
