@@ -258,7 +258,7 @@
                                         <div class="col-md-6">
                                             <div class="row row-space-6">
                                                 <div class="col-6">
-                                                    <select class="form-control" name="furniture">
+                                                    <select class="form-control" name="furnitures">
                                                         <option value="Yes"> Yes </option>
                                                         <option value="No"> No </option>
                                                     </select>
@@ -303,21 +303,20 @@
                                     </div>
                                     <!-- end form-group -->
                                     <!-- begin form-group -->
-{{--                                    <div class="form-group row m-b-10">--}}
-{{--                                        <label class="col-md-3 col-form-label text-md-right">Prepaid<span class="text-danger">&nbsp;</span></label>--}}
-{{--                                        <div class="col-md-6">--}}
-{{--                                            <div class="row row-space-6">--}}
-{{--                                                <div class="col-6">--}}
-{{--                                                    <select class="form-control" name="prepaid">--}}
-{{--                                                        <option value="首一尾五"> 首一尾五 </option>--}}
-{{--                                                        <option value="全年"> 全年 </option>--}}
-{{--                                                        <option value="首一尾三"> 首一尾三 </option>--}}
-{{--                                                    </select>--}}
-{{--                                                </div>--}}
+                                    <div class="form-group row m-b-10">
+                                        <label class="col-md-3 col-form-label text-md-right">Prepaid<span class="text-danger">&nbsp;</span></label>
+                                        <div class="col-md-6">
+                                            <div class="row row-space-6">
+                                                <div class="col-6">
+                                                    <select class="form-control" name="prepaid">
+                                                        <option value="Yes"> Yes </option>
+                                                        <option value="No"> No </option>
+                                                    </select>
+                                                </div>
 
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
+                                            </div>
+                                        </div>
+                                    </div>
                                     <!-- end form-group -->
 
                                 </div>

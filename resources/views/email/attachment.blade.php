@@ -10,10 +10,10 @@
         | Prefer Area      | {{$data['area']}}  |
         | Move-In      | {{$data['movein']}}  |
         | Lease Term      | {{$data['lease']}}  |
-        | Pat      | {{$data['pat']}}  |
+        | Pet      | {{$data['pat']}}  |
         | Budget      | {{$data['budget']}}  |
         | Furniture      | {{$data['furnitures']}}  |
-        | Need Park      | {{$data['park']}}  |
+        | Park Spot      | {{$data['park']}}  |
         | Check Property      | {{$data['check']}}  |
         | Prepaid      | {{$data['prepaid']}}  |
     @endcomponent
