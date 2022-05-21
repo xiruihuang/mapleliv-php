@@ -10,24 +10,8 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
     <meta content="" name="description"/>
     <meta content="" name="author"/>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5SNL4GP');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109935869-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -41,7 +25,6 @@
     </script>
 
     <!-- ================== BEGIN BASE CSS STYLE ================== -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
     <link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet"/>
     <link href="../assets/plugins/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="../assets/plugins/font-awesome/5.0/css/fontawesome-all.min.css" rel="stylesheet"/>
@@ -53,7 +36,6 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- ================== BEGIN BASE CSS STYLE ================== -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
     <link href="../assets/plugins/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/plugins/font-awesome/5.0/css/fontawesome-all.min.css" rel="stylesheet" />
@@ -159,6 +141,15 @@
 
                                     <!-- begin form-group -->
                                     <div class="form-group row m-b-10">
+                                        <label class="col-md-3 col-form-label text-md-right">Email Address <span class="text-danger">*</span></label>
+                                        <div class="col-md-6">
+                                            <input type="text" name="email" data-parsley-group="step-1" class="form-control" placeholder="Required" data-parsley-required="true"/>
+                                        </div>
+                                    </div>
+                                    <!-- end form-group -->
+
+                                    <!-- begin form-group -->
+                                    <div class="form-group row m-b-10">
                                         <label class="col-md-3 col-form-label text-md-right">Profession<span class="text-danger">*</span></label>
                                         <div class="col-md-6">
                                             <div class="row row-space-6">
@@ -205,16 +196,40 @@
 
                                     <!-- begin form-group -->
                                     <div class="form-group row m-b-10">
-                                        <label class="col-md-3 col-form-label text-md-right">Pefer Area<span class="text-danger">&nbsp;</span></label>
+                                        <label class="col-md-3 col-form-label text-md-right">Pefer Area</label>
                                         <div class="col-md-6">
                                             <input type="text" name="area" data-parsley-group="step-1" class="form-control" />
                                         </div>
                                     </div>
                                     <!-- end form-group -->
 
+
+                                    <div class="form-group row m-b-10">
+                                        <label class="col-md-3 col-form-label text-md-right"> Move In Date <span class="text-danger">*</span></label>
+                                        <div class="col-md-6">
+                                            <input type="text" name="movein" placeholder="Required" data-parsley-group="step-2" data-parsley-required="true" class="form-control" />
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="form-group row m-b-10">
+                                        <label class="col-md-3 col-form-label text-md-right">Lease Term</label>
+                                        <div class="col-md-6">
+                                            <div class="row row-space-6">
+                                                <div class="col-6">
+                                                    <select class="form-control" name="lease">
+                                                        <option value="One Year"> One Year </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <!-- begin form-group -->
                                     <div class="form-group row m-b-10">
-                                        <label class="col-md-3 col-form-label text-md-right">Pet<span class="text-danger">&nbsp;</span></label>
+                                        <label class="col-md-3 col-form-label text-md-right">Pet</label>
                                         <div class="col-md-6">
                                             <div class="row row-space-6">
                                                 <div class="col-6">
@@ -230,7 +245,7 @@
 
                                     <!-- begin form-group -->
                                     <div class="form-group row m-b-10">
-                                        <label class="col-md-3 col-form-label text-md-right">Budget<span class="text-danger">&nbsp;</span></label>
+                                        <label class="col-md-3 col-form-label text-md-right">Budget</label>
                                         <div class="col-md-6">
                                             <input type="text" name="budget" data-parsley-group="step-1" class="form-control" />
                                         </div>
@@ -239,7 +254,7 @@
 
                                     <!-- begin form-group -->
                                     <div class="form-group row m-b-10">
-                                        <label class="col-md-3 col-form-label text-md-right">Furniture<span class="text-danger">&nbsp;</span></label>
+                                        <label class="col-md-3 col-form-label text-md-right">Furniture</label>
                                         <div class="col-md-6">
                                             <div class="row row-space-6">
                                                 <div class="col-6">
@@ -257,7 +272,7 @@
 
                                     <!-- begin form-group -->
                                     <div class="form-group row m-b-10">
-                                        <label class="col-md-3 col-form-label text-md-right">Park<span class="text-danger">&nbsp;</span></label>
+                                        <label class="col-md-3 col-form-label text-md-right">Park</label>
                                         <div class="col-md-6">
                                             <div class="row row-space-6">
                                                 <div class="col-6">
@@ -273,7 +288,7 @@
                                     <!-- end form-group -->
                                     <!-- begin form-group -->
                                     <div class="form-group row m-b-10">
-                                        <label class="col-md-3 col-form-label text-md-right">Need Check Property<span class="text-danger">&nbsp;</span></label>
+                                        <label class="col-md-3 col-form-label text-md-right">Need Check Property</label>
                                         <div class="col-md-6">
                                             <div class="row row-space-6">
                                                 <div class="col-6">

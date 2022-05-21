@@ -26,6 +26,9 @@ class SendForm extends Controller
         $date = [
             'name' => $request -> name,
             'wechat' => $request ->  wechat,
+            'email' => $request ->  email,
+            'movein' => $request ->  movein,
+            'lease' => $request ->  lease,
             'occupation' => $request ->  occupation,
             'colleage' => $request ->  colleage,
             'area' => $request ->  area,
