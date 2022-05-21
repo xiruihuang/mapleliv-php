@@ -128,4 +128,6 @@ Route::get('/showMap', 'MapController@showMap');
 Route::get('/showAreaMap/{id}', 'MapController@showAreaMap');
 
 Route::get('/form', 'SendForm@form');
+Route::get('/form-en', 'SendForm@formEn');
 Route::post('/sendForm', 'SendForm@sendForm');
+

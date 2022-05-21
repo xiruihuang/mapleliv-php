@@ -26,16 +26,31 @@ class SendEmialForm extends Mailable
     /**
      * Build the message.
      *
-     * @return $this
+     * @return
      */
     public function build()
     {
-        return $this->markdown('email.attachment')->subject('testest')->attach($this->data['studentPermit']->getRealPath(), [
-            'as' => $this->data['studentPermit']->getClientOriginalName()
-        ])->attach($this->data['offer']->getRealPath(), [
-            'as' => $this->data['offer']->getClientOriginalName()
-        ])->attach($this->data['passport']->getRealPath(), [
-            'as' => $this->data['passport']->getClientOriginalName()
-        ])->with($this->data);
+        $subject = $this->markdown('email.attachment')->subject('Tenant Information');
+        if ($this -> data['studentPermit'] != null) {
+            $subject = $subject->attach($this->data['studentPermit']->getRealPath(), [
+                'as' => $this->data['studentPermit']->getClientOriginalName()
+            ]);
+        }
+        if ($this -> data['offer'] != null) {
+            $subject = $subject->attach($this->data['offer']->getRealPath(), [
+                'as' => $this->data['offer']->getClientOriginalName()
+            ]);
+        }
+        if ($this -> data['passport'] != null) {
+            $subject = $subject->attach($this->data['passport']->getRealPath(), [
+                'as' => $this->data['passport']->getClientOriginalName()
+            ]);
+        }
+        if ($this -> data['bank'] != null) {
+            $subject = $subject->attach($this->data['bank']->getRealPath(), [
+                'as' => $this->data['bank']->getClientOriginalName()
+            ]);
+        }
+        return $subject>with($this->data);
     }
 }

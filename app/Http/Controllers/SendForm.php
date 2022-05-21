@@ -18,6 +18,10 @@ class SendForm extends Controller
         return view('form');
     }
 
+    function formEn() {
+        return view('form-en');
+    }
+
     function sendForm(Request $request) {
         $date = [
             'name' => $request -> name,
@@ -33,7 +37,8 @@ class SendForm extends Controller
             'prepaid' => $request ->  prepaid,
             'studentPermit' => $request ->  file('studentPermit'),
             'offer' => $request ->  file('offer'),
-            'passport' => $request ->  file('passport')
+            'passport' => $request ->  file('passport'),
+            'bank' => $request ->  file('bank')
         ];
 
         Mail::to('maplelivinginfo@gmail.com')->send(new SendEmialForm($date));
