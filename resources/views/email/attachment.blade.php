@@ -13,7 +13,7 @@
         | Pet      | {{$data['pat']}}  |
         | Budget      | {{$data['budget']}}  |
         | Furniture      | {{$data['furnitures']}}  |
-        | Park Spot      | {{$data['park']}}  |
+        | Parking Spot      | {{$data['park']}}  |
         | Check Property      | {{$data['check']}}  |
         | Prepaid      | {{$data['prepaid']}}  |
     @endcomponent
