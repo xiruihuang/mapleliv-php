@@ -44,7 +44,7 @@ class SendForm extends Controller
             'bank' => $request ->  file('bank')
         ];
 
-        Mail::to('maplelivinginfo@gmail.com')->send(new SendEmialForm($date));
+        Mail::to(['maplelivinginfo@gmail.com', 'rleblanc@sothebysrealty.ca'])->send(new SendEmialForm($date));
         Alert::success('成功');
         return redirect('/')->with('success', '成功');
     }

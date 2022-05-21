@@ -6,13 +6,13 @@
         | Wechat      | {{$data['wechat']}}  |
         | Email Address      | {{$data['email']}}  |
         | Occupation      | {{$data['occupation']}}  |
-        | Colleage      | {{$data['colleage']}}  |
-        | Prefered Area      | {{$data['area']}}  |
-        | MoveIn Date      | {{$data['movein']}}  |
+        | College      | {{$data['colleage']}}  |
+        | Prefer Area      | {{$data['area']}}  |
+        | Move-In      | {{$data['movein']}}  |
         | Lease Term      | {{$data['lease']}}  |
-        | Has Pat      | {{$data['pat']}}  |
+        | Pat      | {{$data['pat']}}  |
         | Budget      | {{$data['budget']}}  |
-        | Has Furnitures      | {{$data['furnitures']}}  |
+        | Furniture      | {{$data['furnitures']}}  |
         | Need Park      | {{$data['park']}}  |
         | Check Property      | {{$data['check']}}  |
         | Prepaid      | {{$data['prepaid']}}  |
