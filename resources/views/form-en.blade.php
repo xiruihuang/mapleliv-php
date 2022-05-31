@@ -338,13 +338,13 @@
                         <div class="card padding-card">
                             <div class="card-body">
                                 <h5 class="card-title mb-4">Upload the school offer (the size must not exceed 2MB, otherwise the submission will be unsuccessful)</h5>
-                                <input type="file" class="form-control" name="offer">
+                                <input type="file" class="form-control" name="offer" data-parsley-required="true">
                             </div>
                         </div>
                         <div class="card padding-card">
                             <div class="card-body">
                                 <h5 class="card-title mb-4">Upload passport photo page (the size must not exceed 2MB, otherwise the submission will be unsuccessful)</h5>
-                                <input type="file" class="form-control" name="passport">
+                                <input type="file" class="form-control" name="passport" data-parsley-required="true">
                             </div>
                         </div>
                         <div class="card padding-card">
