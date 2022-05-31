@@ -323,13 +323,13 @@
                     <div class="card padding-card">
                         <div class="card-body">
                             <h5 class="card-title mb-4">上传学校offer(大小不得超过2MB,否则将提交不成功)</h5>
-                            <input type="file" class="form-control" name="offer" >
+                            <input type="file" class="form-control" name="offer" data-parsley-required="true">
                         </div>
                     </div>
                     <div class="card padding-card">
                         <div class="card-body">
                             <h5 class="card-title mb-4">上传护照头像页(大小不得超过2MB,否则将提交不成功)</h5>
-                            <input type="file" class="form-control" name="passport" >
+                            <input type="file" class="form-control" name="passport" data-parsley-required="true">
                         </div>
                     </div>
                     <div class="card padding-card">
