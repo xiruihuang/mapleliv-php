@@ -173,6 +173,20 @@
 												<input type="text" name="publicPrice" placeholder="publicPrice" class="form-control" data-parsley-group="step-1" data-parsley-required="true" />
 											</div>
 										</div>
+										<div class="form-group row m-b-10">
+											<label class="col-md-3 col-form-label text-md-right">房源类型<span class="text-danger">&nbsp;</span></label>
+											<div class="col-md-6">
+												<div class="row row-space-6">
+													<div class="col-6">
+														<select class="form-control" name="propertyTypes">
+															<option value="Rent"> 出租 </option>
+															<option value="Sell"> 出售 </option>
+														</select>
+													</div>
+
+												</div>
+											</div>
+										</div>
 										<!-- end form-group -->
 									</div>
 									<!-- end col-8 -->

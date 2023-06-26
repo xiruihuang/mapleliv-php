@@ -211,6 +211,7 @@ class HousingController extends Controller
         $house['contactPhone'] = $request -> input('contactPhone');
         $house['landlore'] = $request -> input('landlore');
         $house['isRentkeya'] = 1;
+        $house['propertyTypes'] = $request -> input('propertyTypes');
 
         $a = $house['address'] . $house['city'];
         //'9025 highland court,British Columbia, burnaby'
