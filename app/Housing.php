@@ -13,5 +13,5 @@ class Housing extends Model
      * @var array
      */
     protected $fillable = [
-        'userID','uploadTypeID','address','publicPrice','originPrice','description','city','area','beds','baths','furnitures','washingMachines','dishWasher','elevator','oven','parking','electricity','web','refreshTime','title','phone','wechat','contactPeople','floor', 'housingAges','status','gas', 'condition', 'progress', 'size', 'websiteLink','enterTime','contactPhone','landlore','lat','lng','isRentkeya',
+        'userID','uploadTypeID','address','publicPrice','originPrice','description','city','area','beds','baths','furnitures','washingMachines','dishWasher','elevator','oven','parking','electricity','web','refreshTime','title','phone','wechat','contactPeople','floor', 'housingAges','status','gas', 'condition', 'progress', 'size', 'websiteLink','enterTime','contactPhone','landlore','lat','lng','isRentkeya', 'propertyTypes',
     ];}
