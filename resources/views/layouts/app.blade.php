@@ -235,7 +235,7 @@
                             <li><a href="/addMarketingHousing">添加房源记录<i class="fa fa-paper-plane text-theme m-l-5"></i></a>
                             </li>
                             <li><a href="/showAllMarketingHousing">所有房源记录</a></li>
-                            <li><a href="/live">未租房源记录</a></li>
+                            <li><a href="/live">未处理房源记录</a></li>
                             <li><a href="/dead">已处理房源记录</a></li>
                             <li><a href="/marketingUserPosting">我的发布</a></li>
 
@@ -298,7 +298,7 @@
                             <li><a href="/addMarketingHousing">添加房源记录<i class="fa fa-paper-plane text-theme m-l-5"></i></a>
                             </li>
                             <li><a href="/showAllMarketingHousing">所有房源记录</a></li>
-                            <li><a href="/live">未租房源记录</a></li>
+                            <li><a href="/live">未处理房源记录</a></li>
                             <li><a href="/dead">已处理房源记录</a></li>
                             <li><a href="/marketingUserPosting">我的发布</a></li>
 

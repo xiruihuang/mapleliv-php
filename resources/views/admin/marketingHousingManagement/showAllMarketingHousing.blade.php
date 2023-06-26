@@ -63,6 +63,7 @@
                                         <th class="text-nowrap">入住时间</th>
                                         <th class="text-nowrap">底价</th>
                                        	<th class="text-nowrap">房间</th>
+										<th class="text-nowrap">类型</th>
                                         <th class="text-nowrap">操作</th>
 
                                     </tr>
@@ -88,6 +89,7 @@
                                         <td>
 											{{$u -> beds}}房{{$u -> baths}}卫
                                         </td>
+										<td>{{$u->propertyTypes}}</td>
                                         <td>
                                         	@if($u -> status == 0)
                                         	<a href="/marketingPosting/{{$u -> id}}"><button class="btn btn-success">发布</button></a>
